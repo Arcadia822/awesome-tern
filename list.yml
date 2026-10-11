@@ -100,10 +100,6 @@ sections:
     - name: herdr-tern-plugin
       url: https://github.com/gabrielmoreira/herdr-tern-plugin
       description: Adds an Open Herdr Session command that picks an existing herdr session and attaches to it inside Tern without copying or converting workspaces.
-    - name: herdr-cwd-sync
-      url: https://github.com/m16khb-org/herdr-cwd-sync/tree/main/tern
-      description: Makes the Files pane, titles and new tabs follow the focused herdr pane's directory by forwarding its cwd to Tern with OSC 7.
-      repo: m16khb-org/herdr-cwd-sync
     - name: tern-ide layout
       url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/layout.nix
       description: Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged with Nix inside a NixOS config.
@@ -137,7 +133,7 @@ sections:
       url: https://github.com/aliefe04/tern-worktrees
       description: Adds palette commands that create a git worktree on a new branch with an agent tab, and remove the focused worktree only when it is clean and merged into the default branch.
   - title: Official examples
-    blurb: These examples ship with the official [SDK archive](https://docs.stencil.so/tern/tern-sdk.tar.gz). They are a good starting point if you are writing your own plugin.
+    blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
     entries:
     - name: Terraform Plans
@@ -215,12 +211,9 @@ sections:
 - title: SDKs and protocol libraries
   sort: manual
   entries:
-  - name: Tern SDK
-    url: https://docs.stencil.so/tern/tern-sdk.tar.gz
-    description: Official archive containing Luau type definitions (`tern.d.luau`) and example plugins.
   - name: tern-sdk
     url: https://github.com/stencil-hq/tern-sdk
-    description: Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus example plugins.
+    description: Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
   - name: '@oh-my-pi/pi-wire'
     url: https://github.com/can1357/oh-my-pi/tree/main/packages/wire
     description: 'TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.'
