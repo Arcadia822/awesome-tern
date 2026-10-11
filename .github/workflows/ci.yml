@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "41 3 * * 1"
+    - cron: "41 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - name: Validate list.yml
         run: uv run -q tools/awesome_tern.py check
-      # On main (pushes, weekly, manual runs): fetch stars and status, rebuild, commit.
+      # On main (pushes, nightly, manual runs): fetch stars and status, rebuild, commit.
       - name: Refresh metadata and regenerate README.md
         if: github.event_name != 'pull_request'
         env:

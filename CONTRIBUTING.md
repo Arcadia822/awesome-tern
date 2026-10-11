@@ -23,6 +23,6 @@ CI checks the format of `list.yml` on every pull request. To check locally, run 
 
 ## What the automation does
 
-- **CI** validates `list.yml` on pull requests. When changes land on `main`, and again every Monday, it fetches stars and last-push dates, re-sorts sections, marks entries `archived`, `inactive` (no push in six months) or `unavailable`, and regenerates `README.md`.
+- **CI** validates `list.yml` on pull requests. When changes land on `main`, and again every night, it fetches stars and last-push dates, re-sorts sections, marks entries `archived`, `inactive` (no push in six months) or `unavailable`, and regenerates `README.md`.
 - **Links** checks every link weekly and opens an issue when something breaks.
 - **Discover** searches GitHub weekly for Tern projects created that week that aren't listed, and posts them to a review issue.
