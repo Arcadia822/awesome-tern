@@ -31,6 +31,7 @@ Tern plugins are written in Luau and can be installed directly from GitHub with 
 A lens captures a shell command's output and shows it as a native view. A Raw toggle shows the original text.
 
 - [tern-jj](https://github.com/resYuto/tern-jj) ★ 1 · 2026-10-04 - Displays `jj status` and `jj st` output as a read-only native card with added, modified and deleted files colored to match the Tern theme.
+- [tern-jj-diff](https://github.com/zsxawerdu/tern-jj-diff) ★ 1 · 2026-10-08 - Renders `jj diff` and `jj show` output as a native view with summary badges and one collapsible section per file, filling the gap left by Tern's built-in `jj st` and `jj log` views.
 - [tern-kube](https://github.com/contrafy/tern-kube) ★ 0 · 2026-10-09 - Renders `kubectl` output as sortable, filterable native views, with a live Explore block, one-key pod shells and logs, previewed and confirmed changes, and GitOps drift against your manifests.
 
 ### Blocks
@@ -41,9 +42,17 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [tern-CDP-tidal](https://github.com/H4vC/tern-CDP-tidal) ★ 2 · 2026-10-06 - Player block for the TIDAL desktop app, driven over the Chrome DevTools protocol, with cover art, playback, seeking, volume, shuffle, repeat and line-based search.
 - [tern-office-preview](https://github.com/zerx-lab/tern-office-preview) ★ 1 · 2026-10-06 - Previews Word and Excel files natively in a block using a Rust renderer, with no Office, browser or LibreOffice involved.
 - [tern-pokemon](https://github.com/ITSyndicate25/tern-pokemon) ★ 1 · 2026-10-08 - Ports vscode-pokemon to a block where Pokémon walk, sit and get petted on themed beach, forest and castle scenes, drawn natively with animated GIF sprites and no web view.
+- [tern-pomodoro](https://github.com/tcstacks/tern-pomodoro) ★ 1 · 2026-10-09 - Minimal timer block with 25-minute focus and 5-minute break defaults, adjustable durations and a quiet progress line, using no network or subprocesses.
 - [tern-ssh](https://github.com/aancw/tern-ssh) ★ 1 · 2026-10-09 - An ssh host manager that runs as a Tern pane. It lists the hosts of an ssh config, connects to them, and adds, edits and removes hosts without leaving Tern.
+- [kedi-tern](https://github.com/kedi-lang/kedi-tern) ★ 0 · 2026-10-09 - Read-only viewer for `.kedi` files that highlights them in a native Tern editor using tree-sitter, without running the embedded Python.
+- [omp Tiles](https://github.com/MrsKugla/omp-tiles-plugin) ★ 0 · 2026-10-10 - Block with one colored tile per open omp session across all Tern sessions, showing the session title and whether it is working, waiting for you or idle.
+- [PR Guide](https://github.com/jubbydev/tern-pr-guide) ★ 0 · 2026-10-11 - Walks through a GitHub pull request one change at a time with the code beside a plain explanation, then lets you comment and post a single review.
+- [tern-grafana](https://github.com/contrafy/tern-grafana) ★ 0 · 2026-10-09 - Grafana and Prometheus-compatible backends as native blocks for PromQL queries, dashboards, alerts and silences, logs and traces; pre-release.
 - [tern-margin](https://github.com/Noctivoro/tern-margin) ★ 0 · 2026-10-08 - Renders a Markdown file block by block so you can leave CriticMarkup comments on any paragraph, list, table or code block, and hands them back to the agent that opened it.
+- [tern-netsuite](https://github.com/contrafy/tern-netsuite) ★ 0 · 2026-10-09 - Native views for the NetSuite SuiteCloud SDF CLI with a production deploy guard, a project explorer and read-only SuiteQL execution logs and account health; public beta.
 - [tern-rss](https://github.com/bmanturner/tern-rss) ★ 0 · 2026-10-07 - Follows RSS and Atom feeds in a block with expandable previews, articles in a docked reader browser, toasts for starred feeds and a catch-up line instead of an ever-growing unread count.
+- [tern-spotify (kyle-elliott)](https://github.com/kyle-elliott/tern-spotify) ★ 0 · 2026-10-09 - Spotify player pane with album art, queue, library, search and device picker, plus a floating mode, status-line track and palette commands for playback.
+- [TernMeOn](https://github.com/segmentationf4u1t/Tern-Me-On) ★ 0 · 2026-10-08 - Controls Buttplug devices from Tern, with haptic patterns written as code and feedback when long commands finish.
 
 ### Window and workflow
 
@@ -54,14 +63,18 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-ide layout](https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/layout.nix) ★ 2 · 2026-10-10 - Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged with Nix inside a NixOS config.
 - [tern-jj workspaces](https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/jj.nix) ★ 2 · 2026-10-10 - Creates, opens, removes, and inspects jj workspaces using Tern dialogs, tabs, and the status line, packaged with Nix inside a NixOS config.
 - [tern-mizu](https://github.com/ITSyndicate25/tern-mizu) ★ 2 · 2026-10-08 - Paints the Mizu Icons VS Code file icon theme over the Files pane, with 893 icons covering 847 file names, 947 extensions and 1457 folder names.
+- [tern-worktree](https://github.com/nibblebot/tern-worktree) ★ 2 · 2026-10-09 - Lists, opens and creates git worktrees from the command palette using plain git, with `jq` and a POSIX shell as the only other requirements.
 - [workspaces-sidebar](https://github.com/rezhajulio/workspaces-sidebar) ★ 2 · 2026-10-09 - Pins a workspace sidebar to every tab that lists sessions and their tabs as a tree, with live badges for waiting agents, running and failed commands, one-click switching, tab color tags, and attention-jump keybindings.
 - [omaterm](https://github.com/betizzel/omaterm) ★ 1 · 2026-10-06 - Matches Tern's background, foreground, window chrome and ANSI colors to your active Omarchy theme.
+- [Overseer](https://github.com/mmnavarr/overseer) ★ 1 · 2026-10-09 - Panel listing every branch in flight with its worktree, agents, pull request and ticket, where each worktree gets its own Tern session.
 - [tern-chime](https://github.com/H4vC/tern-chime) ★ 1 · 2026-10-08 - Plays a configurable sound when a pane raises an unseen alert, an omp agent yields its turn, or a long command finishes, with bundled chimes and per-trigger overrides.
 - [tern-chirp](https://github.com/Noctivoro/tern-chirp) ★ 1 · 2026-10-08 - Plays a short synthesized beep when an agent finishes or waits for you, with the sound's shape chosen by Jev to match how the turn went.
 - [tern-model-usage](https://github.com/azmifarih/tern-model-usage) ★ 1 · 2026-10-04 - Shows omp coding-plan quota for each signed-in account in the status line and opens a canvas pane with provider cards and reset countdowns.
 - [tern-usage-monitor](https://github.com/rico-vz/tern-usage-monitor) ★ 1 · 2026-10-06 - Floating or docked panel showing usage for every omp linked account, with per-account quota bars, auto-refresh, ordering and update-time settings.
 - [tern-worktrees](https://github.com/riicodespretty/tern-worktrees) ★ 1 · 2026-10-10 - Opens git worktrees as Tern tabs with a branch picker and teardown on close, backed by a `tern-wt` CLI and an omp skill for agents.
 - [font-default](https://github.com/getpipher/font-default) ★ 0 · 2026-10-06 - Makes the Reset font size command return to your configured size instead of Tern's built-in default.
+- [pane-highlight](https://github.com/olegpulatov/pane-highlight) ★ 0 · 2026-10-10 - Marks the active split with a border and tint, dims the others, and recolors a pane by user or host, such as red for `prod-*` hosts.
+- [power-surge](https://github.com/dbydd/power-surge) ★ 0 · 2026-10-11 - Neovim plugin that shows sparks on every text change with a combo meter and screen shake, with a Tern command and chord for it.
 - [remote-image-paste](https://github.com/cangiolo/remote-image-paste) ★ 0 · 2026-10-11 - Uploads a macOS clipboard image to the focused remote host over SSH and pastes the server path into the current pane.
 - [tern-agents](https://github.com/maxtuzz/tern-agents) ★ 0 · 2026-10-08 - Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
 - [tern-cat](https://github.com/contrafy/tern-cat) ★ 0 · 2026-10-08 - Adds a pixel-art menace that naps in your panes, swats at your pointer, stares when you sudo and dives through portals when you switch panes.
@@ -69,8 +82,12 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-close-plugin](https://github.com/yumosx/tern-close-plugin) ★ 0 · 2026-10-05 - Adds palette commands that close the other tabs and the split blocks left, right and around the focused block, each row hidden while it would close nothing.
 - [tern-file-paste](https://github.com/vokativ/tern-file-paste) ★ 0 · 2026-10-09 - Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
 - [tern-haptic-alert](https://github.com/lfsmoura/tern-haptic-alert) ★ 0 · 2026-10-06 - Sends a haptic pulse to a Logitech MX Master 4 when an agent finishes or is blocked waiting for input.
+- [tern-omp-layout-fixes](https://github.com/0xGREG/tern-omp-layout-fixes) ★ 0 · 2026-10-09 - Widens omp transcripts to the full pane and adds spacing above the composer, touching only omp session surfaces.
+- [tern-paste-image](https://github.com/Microck/tern-paste-image) ★ 0 · 2026-10-10 - Pastes Windows clipboard screenshots into local or remote Tern terminals with Ctrl+Alt+V, uploading over SSH and inserting the quoted path without pressing Enter.
+- [tern-remote-open](https://github.com/LoneExile/tern-remote-open) ★ 0 · 2026-10-10 - Opens file links, localhost URLs and OAuth loopback sign-in links from remote ssh panes on your Mac, where the file or port would not otherwise exist.
 - [tern-status](https://github.com/getpipher/tern-status) ★ 0 · 2026-10-06 - Status line in the style of tmux with CPU, memory, battery, network, disk and clock segments drawn with Tern's own icons and theme tones.
 - [tern-swarm](https://github.com/bmanturner/tern-swarm) ★ 0 · 2026-10-06 - Kanban board that runs omp agents on its cards in separate git worktrees, runs your checks on their work and waits for your approval.
+- [tern-vimnav](https://github.com/mayask/tern-vimnav) ★ 0 · 2026-10-08 - Brings vim-tmux-navigator to Tern so Ctrl+H/J/K/L moves between Neovim splits and Tern panes.
 - [tern-worktrees (aliefe04)](https://github.com/aliefe04/tern-worktrees) ★ 0 · 2026-10-07 - Adds palette commands that create a git worktree on a new branch with an agent tab, and remove the focused worktree only when it is clean and merged into the default branch.
 - [TernGitButler](https://github.com/edheltzel/Butler-Pane) ★ 0 · 2026-10-09 - GitButler workspaces in Tern, with a status-bar segment, a workspace block with one lane per branch stack and a diff block.
 - [Toons](https://github.com/TazeDiB/Toons-Tern) ★ 0 · 2026-10-08 - Draws cartoons of what the agent is doing while commands run, as a port of claude-toons to Tern's native UI.
