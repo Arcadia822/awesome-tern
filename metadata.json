@@ -35,7 +35,7 @@
     "status": null
   },
   "LoneExile/tern-remote-open": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-11",
     "stars": 0,
     "status": null
   },
@@ -46,7 +46,7 @@
   },
   "Mouriya-Emma/omp-thinking-translator": {
     "pushed": "2026-10-10",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "MrsKugla/omp-tiles-plugin": {
@@ -66,7 +66,7 @@
   },
   "Noctivoro/tern-chirp": {
     "pushed": "2026-10-08",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "Noctivoro/tern-margin": {
@@ -76,7 +76,7 @@
   },
   "TazeDiB/Toons-Tern": {
     "pushed": "2026-10-08",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "aancw/tern-ssh": {
@@ -86,12 +86,12 @@
   },
   "aliefe04/tern-worktrees": {
     "pushed": "2026-10-07",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "arg3t/neotern": {
     "pushed": "2026-10-07",
-    "stars": 3,
+    "stars": 5,
     "status": null
   },
   "azmifarih/tern-model-usage": {
@@ -104,9 +104,14 @@
     "stars": 1,
     "status": null
   },
+  "bmanturner/tern-agent-scheduler": {
+    "pushed": "2026-10-11",
+    "stars": 3,
+    "status": null
+  },
   "bmanturner/tern-rss": {
     "pushed": "2026-10-07",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "bmanturner/tern-swarm": {
@@ -116,7 +121,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-11",
-    "stars": 34984,
+    "stars": 35038,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -126,17 +131,17 @@
   },
   "contrafy/tern-cat": {
     "pushed": "2026-10-08",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "contrafy/tern-grafana": {
     "pushed": "2026-10-09",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "contrafy/tern-kube": {
     "pushed": "2026-10-09",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "contrafy/tern-netsuite": {
@@ -146,7 +151,7 @@
   },
   "d3d0n/terngram": {
     "pushed": "2026-10-05",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "dbydd/power-surge": {
@@ -171,12 +176,12 @@
   },
   "getpipher/tern-status": {
     "pushed": "2026-10-06",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "jubbydev/tern-pr-guide": {
     "pushed": "2026-10-11",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "kedi-lang/kedi-tern": {
@@ -206,7 +211,7 @@
   },
   "mmnavarr/overseer": {
     "pushed": "2026-10-09",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "nibblebot/tern-worktree": {
@@ -215,8 +220,8 @@
     "status": null
   },
   "olegpulatov/pane-highlight": {
-    "pushed": "2026-10-10",
-    "stars": 0,
+    "pushed": "2026-10-11",
+    "stars": 1,
     "status": null
   },
   "pelikanade/flake": {
@@ -226,7 +231,7 @@
   },
   "pgkt04/rmon": {
     "pushed": "2026-10-08",
-    "stars": 6,
+    "stars": 7,
     "status": null
   },
   "plumj-am/nixos": {
@@ -251,7 +256,7 @@
   },
   "rico-vz/tern-usage-monitor": {
     "pushed": "2026-10-06",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "riicodespretty/tern-worktrees": {
@@ -280,13 +285,13 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-10",
-    "stars": 42,
+    "pushed": "2026-10-11",
+    "stars": 44,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
     "pushed": "2026-10-09",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "tdortman/dotfiles": {
@@ -296,12 +301,12 @@
   },
   "theblazehen/mantern": {
     "pushed": "2026-10-05",
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "thefullctx/hermes-for-tern": {
     "pushed": "2026-10-10",
-    "stars": 14,
+    "stars": 17,
     "status": null
   },
   "theoparis/nix-tern": {
