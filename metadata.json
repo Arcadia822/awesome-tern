@@ -16,7 +16,7 @@
   },
   "H4vC/tern-chime": {
     "pushed": "2026-10-08",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "ITSyndicate25/tern-mizu": {
@@ -71,7 +71,7 @@
   },
   "arg3t/neotern": {
     "pushed": "2026-10-07",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "azmifarih/tern-model-usage": {
@@ -95,12 +95,12 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-10",
-    "stars": 34869,
+    "pushed": "2026-10-11",
+    "stars": 34983,
     "status": null
   },
   "cangiolo/remote-image-paste": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-11",
     "stars": 0,
     "status": null
   },
@@ -154,17 +154,17 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-10",
     "stars": 11,
     "status": null
   },
   "pgkt04/rmon": {
     "pushed": "2026-10-08",
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-10",
     "stars": 2,
     "status": null
   },
@@ -179,7 +179,7 @@
     "status": null
   },
   "rico-vz/tern-spotify": {
-    "pushed": "2026-10-04",
+    "pushed": "2026-10-10",
     "stars": 3,
     "status": null
   },
@@ -200,17 +200,17 @@
   },
   "safzanpirani/tern-herdr": {
     "pushed": "2026-10-06",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-11",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-09",
-    "stars": 38,
+    "pushed": "2026-10-10",
+    "stars": 42,
     "status": null
   },
   "tdortman/dotfiles": {
@@ -224,8 +224,8 @@
     "status": null
   },
   "thefullctx/hermes-for-tern": {
-    "pushed": "2026-10-07",
-    "stars": 12,
+    "pushed": "2026-10-10",
+    "stars": 14,
     "status": null
   },
   "theoparis/nix-tern": {
@@ -250,7 +250,7 @@
   },
   "wolfiesch/omp-side": {
     "pushed": "2026-10-04",
-    "stars": 6,
+    "stars": 7,
     "status": null
   },
   "wolfiesch/tern-control": {
