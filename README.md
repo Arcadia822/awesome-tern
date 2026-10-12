@@ -72,6 +72,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-worktree](https://github.com/nibblebot/tern-worktree) ★ 2 · 2026-10-09 - Lists, opens and creates git worktrees from the command palette using plain git, with `jq` and a POSIX shell as the only other requirements.
 - [omaterm](https://github.com/betizzel/omaterm) ★ 1 · 2026-10-06 - Matches Tern's background, foreground, window chrome and ANSI colors to your active Omarchy theme.
 - [pane-highlight](https://github.com/olegpulatov/pane-highlight) ★ 1 · 2026-10-11 - Marks the active split with a border and tint, dims the others, and recolors a pane by user or host, such as red for `prod-*` hosts.
+- [tern-agents](https://github.com/maxtuzz/tern-agents) ★ 1 · 2026-10-08 - Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
 - [tern-cat](https://github.com/contrafy/tern-cat) ★ 1 · 2026-10-08 - Adds a pixel-art menace that naps in your panes, swats at your pointer, stares when you sudo and dives through portals when you switch panes.
 - [tern-chime](https://github.com/H4vC/tern-chime) ★ 1 · 2026-10-08 - Plays a configurable sound when a pane raises an unseen alert, an omp agent yields its turn, or a long command finishes, with bundled chimes and per-trigger overrides.
 - [tern-model-usage](https://github.com/azmifarih/tern-model-usage) ★ 1 · 2026-10-04 - Shows omp coding-plan quota for each signed-in account in the status line and opens a canvas pane with provider cards and reset countdowns.
@@ -82,7 +83,6 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [font-default](https://github.com/getpipher/font-default) ★ 0 · 2026-10-06 - Makes the Reset font size command return to your configured size instead of Tern's built-in default.
 - [power-surge](https://github.com/dbydd/power-surge) ★ 0 · 2026-10-11 - Neovim plugin that shows sparks on every text change with a combo meter and screen shake, with a Tern command and chord for it.
 - [remote-image-paste](https://github.com/cangiolo/remote-image-paste) ★ 0 · 2026-10-11 - Uploads a macOS clipboard image to the focused remote host over SSH and pastes the server path into the current pane.
-- [tern-agents](https://github.com/maxtuzz/tern-agents) ★ 0 · 2026-10-08 - Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
 - [tern-claude-usage](https://github.com/zerx-lab/tern-claude-usage) ★ 0 · 2026-10-12 - Shows Claude Pro and Max usage limits in a panel and a status-line segment, with 5-hour and 7-day windows, per-model limits, pace tracking and reset countdowns.
 - [tern-close-plugin](https://github.com/yumosx/tern-close-plugin) ★ 0 · 2026-10-05 - Adds palette commands that close the other tabs and the split blocks left, right and around the focused block, each row hidden while it would close nothing.
 - [tern-file-paste](https://github.com/vokativ/tern-file-paste) ★ 0 · 2026-10-09 - Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
@@ -110,7 +110,7 @@ These examples ship with the official [SDK repository](https://github.com/stenci
 
 Applications that draw their own user interface natively inside Tern using the Tern Surface Protocol (TSP).
 
-- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 35125 · 2026-10-12 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 35152 · 2026-10-12 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
 - [Hermes for Tern](https://github.com/thefullctx/hermes-for-tern) ★ 17 · 2026-10-10 - Unofficial Tern frontend for Hermes Agent that draws the conversation, tool rows, subagents, buttons and a docked composer natively over TSP, and leaves the normal Hermes interface alone in other terminals.
 - [rmon](https://github.com/pgkt04/rmon) ★ 8 · 2026-10-08 - Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
 - [Octet](https://github.com/skaft-software/octet/pull/485) ★ 7 · 2026-10-12 - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
@@ -132,8 +132,8 @@ Applications that draw their own user interface natively inside Tern using the T
 ## SDKs and protocol libraries
 
 - [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 47 · 2026-10-12 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
-- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 35125 · 2026-10-12 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
-- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 35125 · 2026-10-12 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 35152 · 2026-10-12 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
+- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 35152 · 2026-10-12 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
 - [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ★ 7 · 2026-10-12 - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
 
 ## Official resources
