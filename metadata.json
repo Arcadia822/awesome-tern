@@ -106,7 +106,7 @@
   },
   "bmanturner/tern-agent-scheduler": {
     "pushed": "2026-10-11",
-    "stars": 3,
+    "stars": 7,
     "status": null
   },
   "bmanturner/tern-rss": {
@@ -120,8 +120,8 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-11",
-    "stars": 35038,
+    "pushed": "2026-10-12",
+    "stars": 35125,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -136,7 +136,7 @@
   },
   "contrafy/tern-grafana": {
     "pushed": "2026-10-09",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "contrafy/tern-kube": {
@@ -164,6 +164,11 @@
     "stars": 0,
     "status": null
   },
+  "foxzool/tern-tracker": {
+    "pushed": "2026-10-12",
+    "stars": 0,
+    "status": null
+  },
   "gabrielmoreira/herdr-tern-plugin": {
     "pushed": "2026-10-05",
     "stars": 3,
@@ -181,7 +186,7 @@
   },
   "jubbydev/tern-pr-guide": {
     "pushed": "2026-10-11",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "kedi-lang/kedi-tern": {
@@ -211,7 +216,7 @@
   },
   "mmnavarr/overseer": {
     "pushed": "2026-10-09",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "nibblebot/tern-worktree": {
@@ -225,17 +230,17 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-12",
     "stars": 11,
     "status": null
   },
   "pgkt04/rmon": {
     "pushed": "2026-10-08",
-    "stars": 7,
+    "stars": 8,
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-11",
     "stars": 2,
     "status": null
   },
@@ -246,7 +251,7 @@
   },
   "rezhajulio/workspaces-sidebar": {
     "pushed": "2026-10-09",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "rico-vz/tern-spotify": {
@@ -260,7 +265,7 @@
     "status": null
   },
   "riicodespretty/tern-worktrees": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-12",
     "stars": 1,
     "status": null
   },
@@ -276,17 +281,17 @@
   },
   "segmentationf4u1t/Tern-Me-On": {
     "pushed": "2026-10-08",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-12",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-11",
-    "stars": 44,
+    "pushed": "2026-10-12",
+    "stars": 47,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
@@ -295,7 +300,7 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-12",
     "stars": 1,
     "status": null
   },
@@ -330,7 +335,7 @@
     "status": null
   },
   "wolfiesch/omp-side": {
-    "pushed": "2026-10-04",
+    "pushed": "2026-10-12",
     "stars": 7,
     "status": null
   },
@@ -345,7 +350,7 @@
     "status": null
   },
   "zerx-lab/tern-claude-usage": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-12",
     "stars": 0,
     "status": null
   },
