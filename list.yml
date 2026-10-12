@@ -79,6 +79,9 @@ sections:
     - name: TernMeOn
       url: https://github.com/segmentationf4u1t/Tern-Me-On
       description: Controls Buttplug devices from Tern, with haptic patterns written as code and feedback when long commands finish.
+    - name: tern-tracker
+      url: https://github.com/foxzool/tern-tracker
+      description: Lists the GitHub issues and pull requests of the repository in the focused pane's directory, with comments and a form for creating issues, in English or Chinese.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
