@@ -4,6 +4,11 @@
     "stars": 0,
     "status": null
   },
+  "AxelMrak/tern-reviewr": {
+    "pushed": "2026-10-12",
+    "stars": 0,
+    "status": null
+  },
   "DinMon/tern-omp-vimnav": {
     "pushed": "2026-10-07",
     "stars": 0,
@@ -11,7 +16,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-07",
-    "stars": 2,
+    "stars": 4,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -66,12 +71,12 @@
   },
   "Noctivoro/tern-chirp": {
     "pushed": "2026-10-08",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "Noctivoro/tern-margin": {
     "pushed": "2026-10-08",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "TazeDiB/Toons-Tern": {
@@ -105,8 +110,8 @@
     "status": null
   },
   "bmanturner/tern-agent-scheduler": {
-    "pushed": "2026-10-11",
-    "stars": 7,
+    "pushed": "2026-10-12",
+    "stars": 11,
     "status": null
   },
   "bmanturner/tern-rss": {
@@ -121,32 +126,32 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-12",
-    "stars": 35152,
+    "stars": 35198,
     "status": null
   },
   "cangiolo/remote-image-paste": {
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-12",
     "stars": 0,
     "status": null
   },
   "contrafy/tern-cat": {
     "pushed": "2026-10-08",
-    "stars": 1,
+    "stars": 3,
     "status": null
   },
   "contrafy/tern-grafana": {
-    "pushed": "2026-10-09",
-    "stars": 2,
+    "pushed": "2026-10-12",
+    "stars": 5,
     "status": null
   },
   "contrafy/tern-kube": {
     "pushed": "2026-10-09",
-    "stars": 1,
+    "stars": 3,
     "status": null
   },
   "contrafy/tern-netsuite": {
     "pushed": "2026-10-09",
-    "stars": 0,
+    "stars": 2,
     "status": null
   },
   "d3d0n/terngram": {
@@ -160,7 +165,7 @@
     "status": null
   },
   "edheltzel/Butler-Pane": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-12",
     "stars": 0,
     "status": null
   },
@@ -185,7 +190,7 @@
     "status": null
   },
   "jubbydev/tern-pr-guide": {
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-12",
     "stars": 2,
     "status": null
   },
@@ -216,7 +221,7 @@
   },
   "mmnavarr/overseer": {
     "pushed": "2026-10-09",
-    "stars": 3,
+    "stars": 5,
     "status": null
   },
   "nibblebot/tern-worktree": {
@@ -291,7 +296,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-12",
-    "stars": 47,
+    "stars": 48,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
