@@ -177,6 +177,9 @@ sections:
     - name: Overseer
       url: https://github.com/mmnavarr/overseer
       description: Panel listing every branch in flight with its worktree, agents, pull request and ticket, where each worktree gets its own Tern session.
+    - name: jira-tern
+      url: https://github.com/hanbong5938/jira-tern
+      description: Native Jira browser that reads and posts issue comments, runs status transitions, and opens a Git worktree or jj workspace with an omp agent tab for an issue.
     - name: tern-remote-open
       url: https://github.com/LoneExile/tern-remote-open
       description: Opens file links, localhost URLs and OAuth loopback sign-in links from remote ssh panes on your Mac, where the file or port would not otherwise exist.
