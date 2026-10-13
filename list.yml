@@ -85,6 +85,10 @@ sections:
     - name: Tern Reviewr
       url: https://github.com/AxelMrak/tern-reviewr
       description: Reviews staged, unstaged, and untracked Git changes in a native Tern diff view, sends line-anchored comments directly to an agent, and tracks per-file review progress.
+    - name: Forge Meetings
+      url: https://github.com/Moti-Velz/tern-forge/tree/main/meetings
+      description: Lists Granola and Fireflies meetings, email threads over IMAP and local transcript exports in one keyboard-driven block, and pastes the ones you pick into the agent's composer as a summary or full transcript.
+      repo: Moti-Velz/tern-forge
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
@@ -198,6 +202,14 @@ sections:
     - name: power-surge
       url: https://github.com/dbydd/power-surge
       description: Neovim plugin that shows sparks on every text change with a combo meter and screen shake, with a Tern command and chord for it.
+    - name: Forge Projects
+      url: https://github.com/Moti-Velz/tern-forge/tree/main/projects
+      description: Sidebar for parallel agent work that gives each git worktree its own Tern session, with agent status, pull request and Linear ticket on every row, and one box that opens or creates a worktree from a branch, ticket or pull request.
+      repo: Moti-Velz/tern-forge
+    - name: Forge Omarchy
+      url: https://github.com/Moti-Velz/tern-forge/tree/main/omarchy
+      description: Makes Omarchy's window keys act on Tern panes first and fall through to Hyprland at the edges, in the style of vim-tmux-navigator, with desktop notifications when agents finish or wait for you.
+      repo: Moti-Velz/tern-forge
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
