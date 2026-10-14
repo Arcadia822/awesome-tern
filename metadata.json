@@ -26,7 +26,7 @@
   },
   "H4vC/tern-chime": {
     "pushed": "2026-10-08",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "ITSyndicate25/tern-mizu": {
@@ -55,7 +55,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-10-10",
+    "pushed": "2026-10-14",
     "stars": 1,
     "status": null
   },
@@ -106,7 +106,7 @@
   },
   "arg3t/neotern": {
     "pushed": "2026-10-07",
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "azmifarih/tern-model-usage": {
@@ -136,7 +136,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-14",
-    "stars": 35394,
+    "stars": 35428,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -229,8 +229,13 @@
     "stars": 2,
     "status": null
   },
-  "materemias/tern-awui": {
+  "materemias/codexbar-agentview": {
     "pushed": "2026-10-13",
+    "stars": 1,
+    "status": null
+  },
+  "materemias/tern-awui": {
+    "pushed": "2026-10-14",
     "stars": 0,
     "status": null
   },
@@ -246,7 +251,7 @@
   },
   "mmnavarr/overseer": {
     "pushed": "2026-10-14",
-    "stars": 8,
+    "stars": 9,
     "status": null
   },
   "nibblebot/tern-worktree": {
@@ -326,7 +331,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-12",
-    "stars": 53,
+    "stars": 54,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
