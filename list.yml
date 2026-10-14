@@ -216,6 +216,9 @@ sections:
     - name: tern-gpg-touch
       url: https://github.com/edcnogueira/tern-gpg-touch
       description: Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
+    - name: CodexBar AgentView
+      url: https://github.com/materemias/codexbar-agentview
+      description: Shows Claude, Codex and other AI provider usage from the CodexBar CLI in the status line, with a dashboard that lists live and ended Claude Code, Codex, omp and pi sessions and focuses or resumes them in Tern tabs.
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
