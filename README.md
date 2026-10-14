@@ -135,6 +135,7 @@ Applications that draw their own user interface natively inside Tern using the T
 - [tern-mcp](https://github.com/NaC-L/tern-mcp) ★ 2 · 2026-10-03 - Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
 - [omp-thinking-translator](https://github.com/Mouriya-Emma/omp-thinking-translator) ★ 1 · 2026-10-10 - An omp extension that translates visible thinking into collapsible native sections in Tern and plain ANSI output in other terminals.
 - [tern-control](https://github.com/wolfiesch/tern-control) ★ 1 · 2026-10-01 - An omp and Pi extension giving agents tools to find Tern sessions, read transcript digests, follow daemon events, change layout, and type into terminals.
+- [tern-awui](https://github.com/materemias/tern-awui) ★ 0 · 2026-10-13 - Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
 - [tern-omp-vimnav](https://github.com/DinMon/tern-omp-vimnav) ★ 0 · 2026-10-07 - Vim-style navigation of the omp transcript in Tern, with block cursor, text selection and copying, search and Vimium-style hints for links, code blocks and buttons.
 
 ## SDKs and protocol libraries
