@@ -131,7 +131,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-14",
-    "stars": 35379,
+    "stars": 35381,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -166,6 +166,11 @@
   },
   "dbydd/power-surge": {
     "pushed": "2026-10-11",
+    "stars": 0,
+    "status": null
+  },
+  "edcnogueira/tern-gpg-touch": {
+    "pushed": "2026-10-14",
     "stars": 0,
     "status": null
   },
