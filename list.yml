@@ -210,6 +210,9 @@ sections:
       url: https://github.com/Moti-Velz/tern-forge/tree/main/omarchy
       description: Makes Omarchy's window keys act on Tern panes first and fall through to Hyprland at the edges, in the style of vim-tmux-navigator, with desktop notifications when agents finish or wait for you.
       repo: Moti-Velz/tern-forge
+    - name: tern-gpg-touch
+      url: https://github.com/edcnogueira/tern-gpg-touch
+      description: Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
