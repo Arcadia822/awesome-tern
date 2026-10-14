@@ -292,6 +292,9 @@ sections:
   - name: pi-tern
     url: https://github.com/Ghost-9/pi-tern
     description: Makes the pi coding agent Tern-aware with the TSP handshake, native Mermaid diagrams, browser automation, pane capture and a session mirror.
+  - name: tern-awui
+    url: https://github.com/materemias/tern-awui
+    description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
 - title: SDKs and protocol libraries
   sort: manual
   entries:
