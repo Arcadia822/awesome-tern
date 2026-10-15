@@ -136,7 +136,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-15",
-    "stars": 35483,
+    "stars": 35511,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -206,6 +206,11 @@
   },
   "hanbong5938/jira-tern": {
     "pushed": "2026-10-13",
+    "stars": 0,
+    "status": null
+  },
+  "joaodutra88/tern-omp-usage": {
+    "pushed": "2026-10-14",
     "stars": 0,
     "status": null
   },
@@ -402,6 +407,11 @@
   "zsxawerdu/tern-jj-diff": {
     "pushed": "2026-10-08",
     "stars": 1,
+    "status": null
+  },
+  "zyzhou-s-lab/carly-switch": {
+    "pushed": "2026-10-15",
+    "stars": 0,
     "status": null
   }
 }

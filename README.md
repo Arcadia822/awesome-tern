@@ -54,6 +54,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [tern-pokemon](https://github.com/ITSyndicate25/tern-pokemon) ★ 1 · 2026-10-08 - Ports vscode-pokemon to a block where Pokémon walk, sit and get petted on themed beach, forest and castle scenes, drawn natively with animated GIF sprites and no web view.
 - [tern-tracker](https://github.com/foxzool/tern-tracker) ★ 1 · 2026-10-14 - Lists the GitHub issues and pull requests of the repository in the focused pane's directory, with comments and a form for creating issues, in English or Chinese.
 - [TernMeOn](https://github.com/segmentationf4u1t/Tern-Me-On) ★ 1 · 2026-10-08 - Controls Buttplug devices from Tern, with haptic patterns written as code and feedback when long commands finish.
+- [Carly Switch](https://github.com/zyzhou-s-lab/carly-switch) ★ 0 · 2026-10-15 - Switches Carly's native realtime voice between Doubao and OpenAI from a compact panel, including a connection test that does not start the microphone.
 - [Forge Meetings](https://github.com/Moti-Velz/tern-forge/tree/main/meetings) ★ 0 · 2026-10-13 - Lists Granola and Fireflies meetings, email threads over IMAP and local transcript exports in one keyboard-driven block, and pastes the ones you pick into the agent's composer as a summary or full transcript.
 - [kedi-tern](https://github.com/kedi-lang/kedi-tern) ★ 0 · 2026-10-09 - Read-only viewer for `.kedi` files that highlights them in a native Tern editor using tree-sitter, without running the embedded Python.
 - [tern-spotify (kyle-elliott)](https://github.com/kyle-elliott/tern-spotify) ★ 0 · 2026-10-09 - Spotify player pane with album art, queue, library, search and device picker, plus a floating mode, status-line track and palette commands for playback.
@@ -98,6 +99,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-file-paste](https://github.com/vokativ/tern-file-paste) ★ 0 · 2026-10-13 - Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
 - [tern-gpg-touch](https://github.com/edcnogueira/tern-gpg-touch) ★ 0 · 2026-10-14 - Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
 - [tern-omp-layout-fixes](https://github.com/0xGREG/tern-omp-layout-fixes) ★ 0 · 2026-10-09 - Widens omp transcripts to the full pane and adds spacing above the composer, touching only omp session surfaces.
+- [tern-omp-usage](https://github.com/joaodutra88/tern-omp-usage) ★ 0 · 2026-10-14 - Shows Claude and Codex limits from omp in the status line as colored dots, with a Monday-to-Friday weekly budget, saved resets and today's tokens and API cost.
 - [tern-paste-image](https://github.com/Microck/tern-paste-image) ★ 0 · 2026-10-10 - Pastes Windows clipboard screenshots into local or remote Tern terminals with Ctrl+Alt+V, uploading over SSH and inserting the quoted path without pressing Enter.
 - [tern-remote-open](https://github.com/LoneExile/tern-remote-open) ★ 0 · 2026-10-13 - Opens file links, localhost URLs and OAuth loopback sign-in links from remote ssh panes on your Mac, where the file or port would not otherwise exist.
 - [tern-swarm](https://github.com/bmanturner/tern-swarm) ★ 0 · 2026-10-06 - Kanban board that runs omp agents on its cards in separate git worktrees, runs your checks on their work and waits for your approval.
@@ -119,7 +121,7 @@ These examples ship with the official [SDK repository](https://github.com/stenci
 
 Applications that draw their own user interface natively inside Tern using the Tern Surface Protocol (TSP).
 
-- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 35483 · 2026-10-15 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 35511 · 2026-10-15 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
 - [Hermes for Tern](https://github.com/thefullctx/hermes-for-tern) ★ 18 · 2026-10-10 - Unofficial Tern frontend for Hermes Agent that draws the conversation, tool rows, subagents, buttons and a docked composer natively over TSP, and leaves the normal Hermes interface alone in other terminals.
 - [rmon](https://github.com/pgkt04/rmon) ★ 9 · 2026-10-08 - Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
 - [Octet](https://github.com/skaft-software/octet/pull/485) ★ 7 · 2026-10-15 - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
@@ -142,8 +144,8 @@ Applications that draw their own user interface natively inside Tern using the T
 ## SDKs and protocol libraries
 
 - [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 57 · 2026-10-12 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
-- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 35483 · 2026-10-15 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
-- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 35483 · 2026-10-15 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 35511 · 2026-10-15 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
+- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 35511 · 2026-10-15 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
 - [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ★ 7 · 2026-10-15 - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
 
 ## Official resources
