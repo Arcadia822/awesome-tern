@@ -92,6 +92,9 @@ sections:
       url: https://github.com/Moti-Velz/tern-forge/tree/main/meetings
       description: Lists Granola and Fireflies meetings, email threads over IMAP and local transcript exports in one keyboard-driven block, and pastes the ones you pick into the agent's composer as a summary or full transcript.
       repo: Moti-Velz/tern-forge
+    - name: Carly Switch
+      url: https://github.com/zyzhou-s-lab/carly-switch
+      description: Switches Carly's native realtime voice between Doubao and OpenAI from a compact panel, including a connection test that does not start the microphone.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
