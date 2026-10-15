@@ -20,7 +20,7 @@
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
-    "pushed": "2026-10-06",
+    "pushed": "2026-10-14",
     "stars": 2,
     "status": null
   },
@@ -86,7 +86,7 @@
   },
   "SamuelFontess/tern-pencil-preview": {
     "pushed": "2026-10-14",
-    "stars": 0,
+    "stars": 5,
     "status": null
   },
   "TazeDiB/Toons-Tern": {
@@ -135,8 +135,8 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-14",
-    "stars": 35428,
+    "pushed": "2026-10-15",
+    "stars": 35483,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -180,7 +180,7 @@
     "status": null
   },
   "edheltzel/Butler-Pane": {
-    "pushed": "2026-10-13",
+    "pushed": "2026-10-15",
     "stars": 1,
     "status": null
   },
@@ -265,7 +265,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-14",
+    "pushed": "2026-10-15",
     "stars": 11,
     "status": null
   },
@@ -291,7 +291,7 @@
   },
   "rezhajulio/workspaces-sidebar": {
     "pushed": "2026-10-13",
-    "stars": 4,
+    "stars": 5,
     "status": null
   },
   "rico-vz/tern-spotify": {
@@ -325,13 +325,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-14",
+    "pushed": "2026-10-15",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-12",
-    "stars": 54,
+    "stars": 57,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
@@ -351,7 +351,7 @@
   },
   "thefullctx/hermes-for-tern": {
     "pushed": "2026-10-10",
-    "stars": 17,
+    "stars": 18,
     "status": null
   },
   "theoparis/nix-tern": {
