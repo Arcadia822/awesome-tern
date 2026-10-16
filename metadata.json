@@ -9,6 +9,11 @@
     "stars": 1,
     "status": null
   },
+  "Dangerboi/tern-kata": {
+    "pushed": "2026-10-15",
+    "stars": 2,
+    "status": null
+  },
   "DinMon/tern-omp-vimnav": {
     "pushed": "2026-10-07",
     "stars": 0,
@@ -41,7 +46,7 @@
   },
   "LoneExile/tern-remote-open": {
     "pushed": "2026-10-13",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "Microck/tern-paste-image": {
@@ -135,8 +140,8 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-15",
-    "stars": 35511,
+    "pushed": "2026-10-16",
+    "stars": 35599,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -145,7 +150,7 @@
     "status": null
   },
   "contrafy/tern-cat": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-16",
     "stars": 4,
     "status": null
   },
@@ -156,7 +161,7 @@
   },
   "contrafy/tern-kube": {
     "pushed": "2026-10-09",
-    "stars": 4,
+    "stars": 5,
     "status": null
   },
   "contrafy/tern-netsuite": {
@@ -270,7 +275,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-15",
+    "pushed": "2026-10-16",
     "stars": 11,
     "status": null
   },
@@ -280,7 +285,7 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-15",
     "stars": 2,
     "status": null
   },
@@ -321,7 +326,7 @@
   },
   "safzanpirani/tern-herdr": {
     "pushed": "2026-10-06",
-    "stars": 3,
+    "stars": 4,
     "status": null
   },
   "segmentationf4u1t/Tern-Me-On": {
@@ -330,13 +335,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-15",
+    "pushed": "2026-10-16",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-12",
-    "stars": 57,
+    "stars": 58,
     "status": null
   },
   "tcstacks/tern-pomodoro": {
@@ -376,7 +381,7 @@
   },
   "vokativ/tern-file-paste": {
     "pushed": "2026-10-13",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "wolfiesch/omp-side": {
