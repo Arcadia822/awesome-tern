@@ -262,6 +262,9 @@ sections:
   - name: Terngram
     url: https://github.com/d3d0n/terngram
     description: Unofficial keyboard-driven Telegram client built on TDLib and omp's UI toolkit, also installable as a Tern plugin.
+  - name: tern-kata
+    url: https://github.com/Dangerboi/tern-kata
+    description: Browses and edits kata issues in a native pane opened with F9 or the palette, with Markdown issue bodies, priority and label chips, and kata links from agent chat that open the issue.
   - name: saavy
     url: https://github.com/saavy1/saavy_cloud
     description: Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback elsewhere.
