@@ -141,7 +141,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-17",
-    "stars": 35709,
+    "stars": 35726,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -362,6 +362,11 @@
   "thefullctx/hermes-for-tern": {
     "pushed": "2026-10-10",
     "stars": 18,
+    "status": null
+  },
+  "thegeneralist01/tern-projects": {
+    "pushed": "2026-10-16",
+    "stars": 3,
     "status": null
   },
   "theoparis/nix-tern": {
