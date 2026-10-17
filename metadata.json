@@ -141,7 +141,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-17",
-    "stars": 35726,
+    "stars": 35727,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -264,6 +264,11 @@
     "stars": 9,
     "status": null
   },
+  "mullerino/tern-worktree-panel": {
+    "pushed": "2026-10-16",
+    "stars": 0,
+    "status": null
+  },
   "nibblebot/tern-worktree": {
     "pushed": "2026-10-09",
     "stars": 2,
@@ -366,7 +371,7 @@
   },
   "thegeneralist01/tern-projects": {
     "pushed": "2026-10-16",
-    "stars": 3,
+    "stars": 4,
     "status": null
   },
   "theoparis/nix-tern": {
