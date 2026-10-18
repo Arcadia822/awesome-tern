@@ -116,9 +116,6 @@ sections:
     - name: tern-bigquery
       url: https://github.com/junaidrahim/tern-bigquery
       description: BigQuery browser built on the `bq` tool, with project search, dataset and table navigation, schema inspection and scrollable data previews.
-    - name: tern-meetings
-      url: https://github.com/Moti-Velz/tern-meetings
-      description: Panel that adds meeting notes, transcripts and email threads from Granola, Fireflies, IMAP or a folder of exports to the agent you are working with.
     - name: tern-periscope
       url: https://github.com/kenXengineering/tern-periscope
       description: Lists the subagents of an omp session with live status, tool counts and cost, and opens any transcript as it is written.
