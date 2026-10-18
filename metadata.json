@@ -74,11 +74,6 @@
     "stars": 0,
     "status": null
   },
-  "Moti-Velz/tern-meetings": {
-    "pushed": "2026-10-13",
-    "stars": 0,
-    "status": null
-  },
   "Mouriya-Emma/omp-thinking-translator": {
     "pushed": "2026-10-14",
     "stars": 1,
@@ -189,11 +184,6 @@
     "stars": 35809,
     "status": null
   },
-  "cangiolo/remote-image-paste": {
-    "pushed": "2026-10-13",
-    "stars": 0,
-    "status": null
-  },
   "contrafy/tern-cat": {
     "pushed": "2026-10-16",
     "stars": 5,
@@ -239,7 +229,7 @@
     "stars": 0,
     "status": null
   },
-  "edheltzel/Butler-Pane": {
+  "edheltzel/GitButler-for-Tern": {
     "pushed": "2026-10-17",
     "stars": 1,
     "status": null
@@ -606,6 +596,11 @@
   },
   "zyzhou-s-lab/carly-switch": {
     "pushed": "2026-10-15",
+    "stars": 0,
+    "status": null
+  },
+  "zyzhou-s-lab/remote-image-paste": {
+    "pushed": "2026-10-13",
     "stars": 0,
     "status": null
   }
