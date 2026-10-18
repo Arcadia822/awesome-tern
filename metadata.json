@@ -181,8 +181,12 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-18",
-    "stars": 35809,
+    "stars": 35839,
     "status": null
+  },
+  "cangiolo/grokbot-bridge": {
+    "stars": 0,
+    "status": "unavailable"
   },
   "contrafy/tern-cat": {
     "pushed": "2026-10-16",
@@ -281,7 +285,7 @@
   },
   "jmazzola/tern-plugin-omp-usage": {
     "pushed": "2026-10-14",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "jmilldotdev/tern-find-in-files": {
@@ -356,7 +360,7 @@
   },
   "materemias/tern-awui": {
     "pushed": "2026-10-16",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "maxtuzz/tern-agents": {
@@ -475,13 +479,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-18",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-16",
-    "stars": 63,
+    "stars": 64,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -511,7 +515,7 @@
   },
   "thegeneralist01/tern-projects": {
     "pushed": "2026-10-16",
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "theoparis/nix-tern": {
