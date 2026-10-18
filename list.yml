@@ -95,6 +95,51 @@ sections:
     - name: Carly Switch
       url: https://github.com/zyzhou-s-lab/carly-switch
       description: Switches Carly's native realtime voice between Doubao and OpenAI from a compact panel, including a connection test that does not start the microphone.
+    - name: tern-ai-limits
+      url: https://github.com/pfTheTrial/tern-ai-limits
+      description: Side-column panel showing every usage window of your AI coding plans as a ring with its reset countdown, covering Claude, Codex, Cursor, Grok and anything omp tracks.
+    - name: tern-omp-stats
+      url: https://github.com/BaLaurent/tern-omp-stats
+      description: Dashboard block built from native components that turns the usage statistics in `~/.omp/stats.db` into per-model and per-project tables with cost.
+    - name: tern-rmd
+      url: https://github.com/betizzel/tern-rmd
+      description: Opens R Markdown files as notebooks, running chunks in one live R session with plots and paged data frames shown under each chunk.
+    - name: tern-canvas-viewer
+      url: https://github.com/iacore/tern-canvas-viewer
+      description: Opens `.excalidraw` and `.tldraw` drawings as a rendered picture in a block instead of their JSON source.
+    - name: tern-csv
+      url: https://github.com/taooceros/tern-csv
+      description: Shows CSV and TSV files as a native keyboard-driven table with a Table and Text switch.
+    - name: tern-dbgview
+      url: https://github.com/Hime7864/tern-dbgview
+      description: Shows Windows debug output as it is produced, from kernel-mode `DbgPrint` and user-mode `OutputDebugString`.
+    - name: tern-bigquery
+      url: https://github.com/junaidrahim/tern-bigquery
+      description: BigQuery browser built on the `bq` tool, with project search, dataset and table navigation, schema inspection and scrollable data previews.
+    - name: tern-meetings
+      url: https://github.com/Moti-Velz/tern-meetings
+      description: Panel that adds meeting notes, transcripts and email threads from Granola, Fireflies, IMAP or a folder of exports to the agent you are working with.
+    - name: tern-periscope
+      url: https://github.com/kenXengineering/tern-periscope
+      description: Lists the subagents of an omp session with live status, tool counts and cost, and opens any transcript as it is written.
+    - name: tern-ports
+      url: https://github.com/meisijiya/tern-ports
+      description: Shows every listening TCP port on your machine and marks the ones an omp process started.
+    - name: tern-todo
+      url: https://github.com/deLiseLINO/tern-todo
+      description: Task manager with tasks linked to terminal panes and agent sessions, kept in a JSON file and installable on remote hosts.
+    - name: tern-pr-tour
+      url: https://github.com/lfsmoura/tern-pr-tour
+      description: Step-by-step tours of a pull request that can answer questions inline, with a matching pr-tour agent skill.
+    - name: tern-annotate
+      url: https://github.com/hyper-stition/tern-annotate
+      description: Prototype for commenting on a snapshot of any block and sending the edit comments to an agent in batches.
+    - name: tern-find-in-files
+      url: https://github.com/jmilldotdev/tern-find-in-files
+      description: VS Code-style search across the files under a folder, powered by ripgrep, with results updating as you type.
+    - name: tern-software-factory
+      url: https://github.com/junaidrahim/tern-software-factory
+      description: Lists the agents on your Tern host and jumps to the pane of the one you select.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
@@ -231,6 +276,69 @@ sections:
     - name: tern-projects
       url: https://github.com/thegeneralist01/tern-projects
       description: Curated multi-folder projects, pinned chats, and search across OMP, Claude Code, Codex, Pi, OpenCode, and Cursor.
+    - name: tern-task-plugin
+      url: https://github.com/yesmeck/tern-task-plugin
+      description: Makes each task a session with its own branch, git worktree and default agent, with a kanban dashboard of pull request status.
+    - name: tern-plugin-omp-usage
+      url: https://github.com/jmazzola/tern-plugin-omp-usage
+      description: Shows omp usage limits above the composer's context bar, with a meter, reset countdown and clock time for each window on hover.
+    - name: tern-minimax-quota
+      url: https://github.com/meisijiya/tern-minimax-quota
+      description: Shows your MiniMax Token Plan quota in the status line and refreshes it every five minutes.
+    - name: tern-tab-status
+      url: https://github.com/yoyooyooo/tern-tab-status
+      description: Colors tabs by whether their omp and pi sessions are working, waiting or need your attention.
+    - name: tern-agent-progress
+      url: https://github.com/Sipty/tern-agent-progress
+      description: Marks tabs that run omp agents with WoW-style quest marks and todo progress bars.
+    - name: tern-omp-groups
+      url: https://github.com/vishiod/tern-omp-groups
+      description: Groups omp chats by the code at the start of their titles and lists every saved chat under its group, reopening a closed one in that group with a click.
+    - name: tern-workspaces-sidebar
+      url: https://github.com/tobiasesquivel/tern-workspaces-sidebar
+      description: Sidebar that lists every session as a workspace with nested tabs, git counters and agent state, plus a small runtime that gives omp, Claude Code and Codex the same status.
+    - name: tern-plugins (Unravl)
+      url: https://github.com/Unravl/tern-plugins
+      description: Collection with a left sidebar of sessions per host that shows omp agent status, and a fix that keeps the omp composer bar one band when macOS Reduce transparency is on.
+    - name: tern-plugins (Yupmoh)
+      url: https://github.com/Yupmoh/tern-plugins
+      description: Collection whose Kai plugin is a workspaces sidebar showing each session as a card with its agents, files, git changes and branches.
+    - name: tern-plugins (mreishus)
+      url: https://github.com/mreishus/tern-plugins
+      description: Collection of small plugins, including one that moves the tab bar to the bottom in the tiles, studio and float layouts and one that opens a pane's scrollback in nvim.
+    - name: tern-grid-layout
+      url: https://github.com/yoyooyooo/tern-grid-layout
+      description: Arranges the panes of a tab into equal-width columns when the window resizes or on request, keeping manual divider changes in between.
+    - name: tern-extrakeys
+      url: https://github.com/bneil/tern-extrakeys
+      description: Termux-style bar of buttons for Esc, Ctrl, Alt, Tab, arrows and more that types into a pane you choose, using Termux's extra-keys config format.
+    - name: tern-remote-paste
+      url: https://github.com/jmilldotdev/tern-remote-paste
+      description: Makes Ctrl+V in an ssh pane upload a Mac clipboard image to the remote host and paste its path for agents such as omp and Claude Code.
+    - name: tern-browser-profiles
+      url: https://github.com/ian139/tern-browser-profiles
+      description: Opens a Chrome, Brave or Edge profile on macOS inside Tern as an isolated browser signed in with that profile's cookies.
+    - name: tern-obsidian
+      url: https://github.com/dbydd/tern-obsidian
+      description: Recognizes Obsidian vaults and opens their notes, Bases and JSON Canvas files in native reader blocks.
+    - name: tern-desktop-pet
+      url: https://github.com/hanbong5938/tern-desktop-pet
+      description: Connects Tern agent observations and semantic asks to the separately installed Desktop Pet app.
+    - name: tern-git-fx
+      url: https://github.com/willstarnet/tern-git-fx
+      description: Plays a small pixel-art animation in the pane corner while a git command runs, then a success or failure ending based on its exit status.
+    - name: tern-vscode-dark
+      url: https://github.com/ITSyndicate25/tern-vscode-dark
+      description: Paints Tern with VS Code's Dark Modern theme, covering window chrome, terminal colors and the file editor's syntax colors.
+    - name: tern-kami
+      url: https://github.com/justdoswift/tern-kami
+      description: Warm-paper theme with parchment backgrounds, ink-blue accents and serif type, inspired by Kami.
+    - name: tern-custom-background
+      url: https://github.com/naraaalt/tern-custom-background
+      description: Puts a dithered picture behind the whole window, with a settings page to pick the image and how it is drawn.
+    - name: tern-zh-cn
+      url: https://github.com/maicent/tern-zh-cn
+      description: Partial Simplified Chinese translation with Chinese titles for over 50 built-in palette commands and CSS replacement of the palette tabs and tab-bar buttons.
 
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
