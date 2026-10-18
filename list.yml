@@ -165,7 +165,7 @@ sections:
       url: https://github.com/safzanpirani/tern-herdr
       description: Shows Herdr as native Tern tabs, splits and a sidebar, with tabs colored by agent state and Herdr's prefix keys working.
     - name: TernGitButler
-      url: https://github.com/edheltzel/Butler-Pane
+      url: https://github.com/edheltzel/GitButler-for-Tern
       description: GitButler workspaces in Tern, with a status-bar segment, a workspace block with one lane per branch stack and a diff block.
     - name: tern-chime
       url: https://github.com/H4vC/tern-chime
@@ -218,7 +218,7 @@ sections:
       url: https://github.com/vokativ/tern-file-paste
       description: Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
     - name: remote-image-paste
-      url: https://github.com/cangiolo/remote-image-paste
+      url: https://github.com/zyzhou-s-lab/remote-image-paste
       description: Uploads a macOS clipboard image to the focused remote host over SSH and pastes the server path into the current pane.
     - name: tern-mizu
       url: https://github.com/ITSyndicate25/tern-mizu
