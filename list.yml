@@ -137,6 +137,9 @@ sections:
     - name: tern-software-factory
       url: https://github.com/junaidrahim/tern-software-factory
       description: Lists the agents on your Tern host and jumps to the pane of the one you select.
+    - name: tern-claude-workflows
+      url: https://github.com/cgasgarth/tern-claude-workflows
+      description: Side block that follows the Claude Code workflows of the session in its tab, with phase timelines, an agent tree with model, tokens, tools and idle time, and a table of past workflows; it also works for ACP chats, which do not show workflow progress.
     - name: tern-difftastic
       url: https://github.com/MicroProofs/tern-difftastic
       description: Reviews jj and git changes as difftastic's structural side-by-side diffs in a block, with search across both sides of every file and seen and reviewed marks on hunks that survive rebases.
