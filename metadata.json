@@ -64,6 +64,11 @@
     "stars": 2,
     "status": null
   },
+  "MicroProofs/tern-difftastic": {
+    "pushed": "2026-10-20",
+    "stars": 0,
+    "status": null
+  },
   "Microck/tern-paste-image": {
     "pushed": "2026-10-10",
     "stars": 0,
@@ -161,7 +166,7 @@
   },
   "bmanturner/tern-agent-scheduler": {
     "pushed": "2026-10-17",
-    "stars": 17,
+    "stars": 18,
     "status": null
   },
   "bmanturner/tern-rss": {
@@ -181,7 +186,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-20",
-    "stars": 36009,
+    "stars": 36041,
     "status": null
   },
   "cangiolo/grokbot-bridge": {
@@ -194,7 +199,7 @@
     "status": null
   },
   "contrafy/tern-grafana": {
-    "pushed": "2026-10-16",
+    "pushed": "2026-10-20",
     "stars": 7,
     "status": null
   },
@@ -314,7 +319,7 @@
     "status": null
   },
   "junaidrahim/tern-software-factory": {
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-20",
     "stars": 1,
     "status": null
   },
@@ -359,7 +364,7 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-20",
     "stars": 2,
     "status": null
   },
@@ -405,7 +410,7 @@
   },
   "nibblebot/tern-worktree": {
     "pushed": "2026-10-09",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "olegpulatov/pane-highlight": {
@@ -479,13 +484,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-20",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-19",
-    "stars": 67,
+    "stars": 68,
     "status": null
   },
   "taooceros/tern-csv": {

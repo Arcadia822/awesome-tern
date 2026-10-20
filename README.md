@@ -36,7 +36,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 
 ### Blocks
 
-- [tern-grafana](https://github.com/contrafy/tern-grafana) ★ 7 · 2026-10-16 - Grafana and Prometheus-compatible backends as native blocks for PromQL queries, dashboards, alerts and silences, logs and traces; pre-release.
+- [tern-grafana](https://github.com/contrafy/tern-grafana) ★ 7 · 2026-10-20 - Grafana and Prometheus-compatible backends as native blocks for PromQL queries, dashboards, alerts and silences, logs and traces; pre-release.
 - [tern-pencil-preview](https://github.com/SamuelFontess/tern-pencil-preview) ★ 5 · 2026-10-17 - Previews pen.dev (Pencil) `.pen` designs in a block, rendering every top-level frame in one pen CLI run into a disk cache so switching frames is instant, with a layer list, an inspector and re-renders on save.
 - [PR Guide](https://github.com/jubbydev/tern-pr-guide) ★ 4 · 2026-10-13 - Walks through a GitHub pull request one change at a time with the code beside a plain explanation, then lets you comment and post a single review.
 - [tern-spotify](https://github.com/rico-vz/tern-spotify) ★ 4 · 2026-10-10 - Player block for the Spotify desktop app with cover art, playback, seeking and volume controls on macOS, Windows and Linux.
@@ -56,7 +56,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [Tern Reviewr](https://github.com/AxelMrak/tern-reviewr) ★ 1 · 2026-10-12 - Reviews staged, unstaged, and untracked Git changes in a native Tern diff view, sends line-anchored comments directly to an agent, and tracks per-file review progress.
 - [tern-pr-tour](https://github.com/lfsmoura/tern-pr-tour) ★ 1 · 2026-10-16 - Step-by-step tours of a pull request that can answer questions inline, with a matching pr-tour agent skill.
 - [tern-rmd](https://github.com/betizzel/tern-rmd) ★ 1 · 2026-10-17 - Opens R Markdown files as notebooks, running chunks in one live R session with plots and paged data frames shown under each chunk.
-- [tern-software-factory](https://github.com/junaidrahim/tern-software-factory) ★ 1 · 2026-10-18 - Lists the agents on your Tern host and jumps to the pane of the one you select.
+- [tern-software-factory](https://github.com/junaidrahim/tern-software-factory) ★ 1 · 2026-10-20 - Lists the agents on your Tern host and jumps to the pane of the one you select.
 - [tern-spotify (kyle-elliott)](https://github.com/kyle-elliott/tern-spotify) ★ 1 · 2026-10-09 - Spotify player pane with album art, queue, library, search and device picker, plus a floating mode, status-line track and palette commands for playback.
 - [tern-tracker](https://github.com/foxzool/tern-tracker) ★ 1 · 2026-10-14 - Lists the GitHub issues and pull requests of the repository in the focused pane's directory, with comments and a form for creating issues, in English or Chinese.
 - [TernMeOn](https://github.com/segmentationf4u1t/Tern-Me-On) ★ 1 · 2026-10-08 - Controls Buttplug devices from Tern, with haptic patterns written as code and feedback when long commands finish.
@@ -68,6 +68,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [tern-canvas-viewer](https://github.com/iacore/tern-canvas-viewer) ★ 0 · 2026-10-16 - Opens `.excalidraw` and `.tldraw` drawings as a rendered picture in a block instead of their JSON source.
 - [tern-csv](https://github.com/taooceros/tern-csv) ★ 0 · 2026-10-13 - Shows CSV and TSV files as a native keyboard-driven table with a Table and Text switch.
 - [tern-dbgview](https://github.com/Hime7864/tern-dbgview) ★ 0 · 2026-10-14 - Shows Windows debug output as it is produced, from kernel-mode `DbgPrint` and user-mode `OutputDebugString`.
+- [tern-difftastic](https://github.com/MicroProofs/tern-difftastic) ★ 0 · 2026-10-20 - Reviews jj and git changes as difftastic's structural side-by-side diffs in a block, with search across both sides of every file and seen and reviewed marks on hunks that survive rebases.
 - [tern-find-in-files](https://github.com/jmilldotdev/tern-find-in-files) ★ 0 · 2026-10-13 - VS Code-style search across the files under a folder, powered by ripgrep, with results updating as you type.
 - [tern-omp-stats](https://github.com/BaLaurent/tern-omp-stats) ★ 0 · 2026-10-17 - Dashboard block built from native components that turns the usage statistics in `~/.omp/stats.db` into per-model and per-project tables with cost.
 - [tern-periscope](https://github.com/kenXengineering/tern-periscope) ★ 0 · 2026-10-16 - Lists the subagents of an omp session with live status, tool counts and cost, and opens any transcript as it is written.
@@ -77,7 +78,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 
 Window plugins add commands, keybindings, layouts, and status-line segments.
 
-- [tern-agent-scheduler](https://github.com/bmanturner/tern-agent-scheduler) ★ 17 · 2026-10-17 - Schedules omp agent runs with cron, presets, plain-English or one-shot times, starts each in a background tab and keeps their results, failures and costs in a manager block, with status-line, notification and Carly support.
+- [tern-agent-scheduler](https://github.com/bmanturner/tern-agent-scheduler) ★ 18 · 2026-10-17 - Schedules omp agent runs with cron, presets, plain-English or one-shot times, starts each in a background tab and keeps their results, failures and costs in a manager block, with status-line, notification and Carly support.
 - [Overseer](https://github.com/mmnavarr/overseer) ★ 11 · 2026-10-14 - Panel listing every branch in flight with its worktree, agents, pull request and ticket, where each worktree gets its own Tern session.
 - [tern-projects](https://github.com/thegeneralist01/tern-projects) ★ 8 · 2026-10-16 - Curated multi-folder projects, pinned chats, and search across OMP, Claude Code, Codex, Pi, OpenCode, and Cursor.
 - [omaterm](https://github.com/betizzel/omaterm) ★ 6 · 2026-10-06 - Matches Tern's background, foreground, window chrome and ANSI colors to your active Omarchy theme.
@@ -89,6 +90,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-mizu](https://github.com/ITSyndicate25/tern-mizu) ★ 3 · 2026-10-08 - Paints the Mizu Icons VS Code file icon theme over the Files pane, with 893 icons covering 847 file names, 947 extensions and 1457 folder names.
 - [tern-plugin-omp-usage](https://github.com/jmazzola/tern-plugin-omp-usage) ★ 3 · 2026-10-14 - Shows omp usage limits above the composer's context bar, with a meter, reset countdown and clock time for each window on hover.
 - [tern-usage-monitor](https://github.com/rico-vz/tern-usage-monitor) ★ 3 · 2026-10-06 - Floating or docked panel showing usage for every omp linked account, with per-account quota bars, auto-refresh, ordering and update-time settings.
+- [tern-worktree](https://github.com/nibblebot/tern-worktree) ★ 3 · 2026-10-09 - Lists, opens and creates git worktrees from the command palette using plain git, with `jq` and a POSIX shell as the only other requirements.
 - [CodexBar AgentView](https://github.com/materemias/codexbar-agentview) ★ 2 · 2026-10-16 - Shows Claude, Codex and other AI provider usage from the CodexBar CLI in the status line, with a dashboard that lists live and ended Claude Code, Codex, omp and pi sessions and focuses or resumes them in Tern tabs.
 - [tern-chime](https://github.com/H4vC/tern-chime) ★ 2 · 2026-10-08 - Plays a configurable sound when a pane raises an unseen alert, an omp agent yields its turn, or a long command finishes, with bundled chimes and per-trigger overrides.
 - [tern-haptic-alert](https://github.com/lfsmoura/tern-haptic-alert) ★ 2 · 2026-10-06 - Sends a haptic pulse to a Logitech MX Master 4 when an agent finishes or is blocked waiting for input.
@@ -97,7 +99,6 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-plugins (Yupmoh)](https://github.com/Yupmoh/tern-plugins) ★ 2 · 2026-10-16 - Collection whose Kai plugin is a workspaces sidebar showing each session as a card with its agents, files, git changes and branches.
 - [tern-remote-open](https://github.com/LoneExile/tern-remote-open) ★ 2 · 2026-10-13 - Opens file links, localhost URLs and OAuth loopback sign-in links from remote ssh panes on your Mac, where the file or port would not otherwise exist.
 - [tern-vscode-dark](https://github.com/ITSyndicate25/tern-vscode-dark) ★ 2 · 2026-10-15 - Paints Tern with VS Code's Dark Modern theme, covering window chrome, terminal colors and the file editor's syntax colors.
-- [tern-worktree](https://github.com/nibblebot/tern-worktree) ★ 2 · 2026-10-09 - Lists, opens and creates git worktrees from the command palette using plain git, with `jq` and a POSIX shell as the only other requirements.
 - [tern-zh-cn](https://github.com/maicent/tern-zh-cn) ★ 2 · 2026-10-14 - Partial Simplified Chinese translation with Chinese titles for over 50 built-in palette commands and CSS replacement of the palette tabs and tab-bar buttons.
 - [Toons](https://github.com/TazeDiB/Toons-Tern) ★ 2 · 2026-10-08 - Draws cartoons of what the agent is doing while commands run, as a port of claude-toons to Tern's native UI.
 - [pane-highlight](https://github.com/olegpulatov/pane-highlight) ★ 1 · 2026-10-11 - Marks the active split with a border and tint, dims the others, and recolors a pane by user or host, such as red for `prod-*` hosts.
@@ -158,11 +159,11 @@ These examples ship with the official [SDK repository](https://github.com/stenci
 
 Applications that draw their own user interface natively inside Tern using the Tern Surface Protocol (TSP).
 
-- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 36009 · 2026-10-20 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 36041 · 2026-10-20 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
 - [Hermes for Tern](https://github.com/thefullctx/hermes-for-tern) ★ 18 · 2026-10-10 - Unofficial Tern frontend for Hermes Agent that draws the conversation, tool rows, subagents, buttons and a docked composer natively over TSP, and leaves the normal Hermes interface alone in other terminals.
 - [rmon](https://github.com/pgkt04/rmon) ★ 9 · 2026-10-18 - Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
 - [neotern](https://github.com/arg3t/neotern) ★ 7 · 2026-10-07 - Neovim drawn as a native Tern surface in the style of Neovide, with a native command palette and picker; alpha and tuned to the author's own dotfiles.
-- [Octet](https://github.com/skaft-software/octet/pull/485) ★ 7 · 2026-10-19 - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
+- [Octet](https://github.com/skaft-software/octet/pull/485) ★ 7 · 2026-10-20 - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
 - [mantern](https://github.com/theblazehen/mantern) ★ 6 · 2026-10-05 - Drop-in `man` replacement that draws pages natively in Tern over TSP, with a synopsis card, option cards, tables, foldable sections and clickable SEE ALSO links, and falls back to the system `man` elsewhere.
 - [Ternatro](https://github.com/verusferro/Ternatro) ★ 3 · 2026-10-09 - Plays Balatro in a Tern pane, running the game's own Lua code from your copy of Balatro.exe and drawing its layout, card motion, particles and shaders natively; you need to own the game.
 - [saavy](https://github.com/saavy1/saavy_cloud) ★ 2 · 2026-10-05 - Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback elsewhere.
@@ -173,7 +174,7 @@ Applications that draw their own user interface natively inside Tern using the T
 
 - [omp-side](https://github.com/wolfiesch/omp-side) ★ 9 · 2026-10-12 - Adds a `/side` command to fork the conversation into a child session and open it in a side pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.
 - [pi-tern](https://github.com/Ghost-9/pi-tern) ★ 5 · 2026-10-07 - Makes the pi coding agent Tern-aware with the TSP handshake, native Mermaid diagrams, browser automation, pane capture and a session mirror.
-- [tern-awui](https://github.com/materemias/tern-awui) ★ 2 · 2026-10-19 - Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
+- [tern-awui](https://github.com/materemias/tern-awui) ★ 2 · 2026-10-20 - Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
 - [tern-mcp](https://github.com/NaC-L/tern-mcp) ★ 2 · 2026-10-03 - Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
 - [omp-thinking-translator](https://github.com/Mouriya-Emma/omp-thinking-translator) ★ 1 · 2026-10-14 - An omp extension that translates visible thinking into collapsible native sections in Tern and plain ANSI output in other terminals.
 - [tern-control](https://github.com/wolfiesch/tern-control) ★ 1 · 2026-10-01 - An omp and Pi extension giving agents tools to find Tern sessions, read transcript digests, follow daemon events, change layout, and type into terminals.
@@ -182,10 +183,10 @@ Applications that draw their own user interface natively inside Tern using the T
 
 ## SDKs and protocol libraries
 
-- [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 67 · 2026-10-19 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
-- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 36009 · 2026-10-20 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
-- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 36009 · 2026-10-20 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
-- [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ★ 7 · 2026-10-19 - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
+- [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 68 · 2026-10-19 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
+- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 36041 · 2026-10-20 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
+- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 36041 · 2026-10-20 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+- [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ★ 7 · 2026-10-20 - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
 
 ## Official resources
 
