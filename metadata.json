@@ -115,7 +115,7 @@
     "status": null
   },
   "SamuelFontess/tern-pencil-preview": {
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-23",
     "stars": 6,
     "status": null
   },
@@ -190,8 +190,8 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-23",
-    "stars": 36322,
+    "pushed": "2026-10-24",
+    "stars": 36404,
     "status": null
   },
   "cangiolo/grokbot-bridge": {
@@ -201,6 +201,11 @@
   "cgasgarth/tern-claude-workflows": {
     "pushed": "2026-10-21",
     "stars": 0,
+    "status": null
+  },
+  "cgasgarth/tern-tab-search": {
+    "pushed": "2026-10-21",
+    "stars": 1,
     "status": null
   },
   "contrafy/tern-cat": {
@@ -344,7 +349,7 @@
     "status": null
   },
   "kenXengineering/tern-periscope": {
-    "pushed": "2026-10-16",
+    "pushed": "2026-10-23",
     "stars": 1,
     "status": null
   },
@@ -359,13 +364,13 @@
     "status": null
   },
   "lfsmoura/tern-pr-tour": {
-    "pushed": "2026-10-16",
+    "pushed": "2026-10-23",
     "stars": 1,
     "status": null
   },
   "maicent/tern-zh-cn": {
     "pushed": "2026-10-14",
-    "stars": 3,
+    "stars": 4,
     "status": null
   },
   "materemias/codexbar-agentview": {
@@ -424,12 +429,12 @@
     "status": null
   },
   "olegpulatov/pane-highlight": {
-    "pushed": "2026-10-22",
+    "pushed": "2026-10-23",
     "stars": 3,
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-23",
+    "pushed": "2026-10-24",
     "stars": 11,
     "status": null
   },
@@ -444,7 +449,7 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-10-21",
+    "pushed": "2026-10-24",
     "stars": 2,
     "status": null
   },
@@ -500,7 +505,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-19",
-    "stars": 77,
+    "stars": 84,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -514,7 +519,7 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-10-22",
+    "pushed": "2026-10-24",
     "stars": 1,
     "status": null
   },
@@ -524,8 +529,8 @@
     "status": null
   },
   "thefullctx/hermes-for-tern": {
-    "pushed": "2026-10-22",
-    "stars": 19,
+    "pushed": "2026-10-23",
+    "stars": 20,
     "status": null
   },
   "thegeneralist01/tern-projects": {
