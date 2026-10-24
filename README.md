@@ -29,7 +29,7 @@ Plugins are written in Luau and installed with `tern plugin install github.com/O
 
 ### Coding agents
 
-- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ![app](assets/kinds/app.svg) ★ 36,412 · today - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ![app](assets/kinds/app.svg) ★ 36,413 · today - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
 - [Hermes for Tern](https://github.com/thefullctx/hermes-for-tern) ![app](assets/kinds/app.svg) ★ 20 · 1d ago - Unofficial Tern frontend for Hermes Agent that draws the conversation, tool rows, subagents, buttons and a docked composer natively over TSP, and leaves the normal Hermes interface alone in other terminals.
 - [Octet](https://github.com/skaft-software/octet/pull/485) ![app](assets/kinds/app.svg) ★ 9 · 1d ago - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
 - [saavy](https://github.com/saavy1/saavy_cloud) ![app](assets/kinds/app.svg) ★ 2 · 2w ago - Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback elsewhere.
@@ -261,13 +261,13 @@ Plugins are written in Luau and installed with `tern plugin install github.com/O
 ### SDKs and protocol libraries
 
 - [tern-sdk](https://github.com/stencil-hq/tern-sdk) ![library](assets/kinds/library.svg) ★ 84 · 5d ago - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus the Luau type definitions (`tern.d.luau`) and example plugins.
-- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ![library](assets/kinds/library.svg) ★ 36,412 · today - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
-- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ![library](assets/kinds/library.svg) ★ 36,412 · today - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ![library](assets/kinds/library.svg) ★ 36,413 · today - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
+- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ![library](assets/kinds/library.svg) ★ 36,413 · today - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
 - [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ![library](assets/kinds/library.svg) ★ 9 · 1d ago - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
 
 ### Plugin templates and tooling
 
-- [tern-plugin-base](https://github.com/olegpulatov/tern-plugin-base) ![plugin](assets/kinds/plugin.svg) - Minimal starting point for a Tern plugin to copy, with package, config and dev commands and an example that logs a greeting on load.
+- [tern-plugin-base](https://github.com/olegpulatov/tern-plugin-base) ![plugin](assets/kinds/plugin.svg) ★ 0 · 13d ago - Minimal starting point for a Tern plugin to copy, with package, config and dev commands and an example that logs a greeting on load.
 
 ## Packaging and dotfiles
 

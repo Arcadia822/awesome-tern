@@ -191,12 +191,8 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-24",
-    "stars": 36412,
+    "stars": 36413,
     "status": null
-  },
-  "cangiolo/grokbot-bridge": {
-    "stars": 0,
-    "status": "unavailable"
   },
   "cgasgarth/tern-claude-workflows": {
     "pushed": "2026-10-21",
@@ -441,6 +437,11 @@
   "olegpulatov/pane-highlight": {
     "pushed": "2026-10-23",
     "stars": 3,
+    "status": null
+  },
+  "olegpulatov/tern-plugin-base": {
+    "pushed": "2026-10-11",
+    "stars": 0,
     "status": null
   },
   "pelikanade/flake": {
