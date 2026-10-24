@@ -177,6 +177,7 @@ Applications that draw their own user interface natively inside Tern using the T
 
 - [omp-side](https://github.com/wolfiesch/omp-side) ★ 9 · 2026-10-22 - Adds a `/side` command to fork the conversation into a child session and open it in a side pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.
 - [pi-tern](https://github.com/Ghost-9/pi-tern) ★ 6 · 2026-10-07 - Makes the pi coding agent Tern-aware with the TSP handshake, native Mermaid diagrams, browser automation, pane capture and a session mirror.
+- [omp-stretch](https://github.com/materemias/omp-stretch) ★ 5 · 2026-10-24 - Shows each omp reply in Tern as its gist, with linked phrases that grow their detail in place when clicked, and tells the model which parts you opened.
 - [tern-awui](https://github.com/materemias/tern-awui) ★ 5 · 2026-10-22 - Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
 - [tern-mcp](https://github.com/NaC-L/tern-mcp) ★ 2 · 2026-10-03 - Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
 - [omp-thinking-translator](https://github.com/Mouriya-Emma/omp-thinking-translator) ★ 1 · 2026-10-14 - An omp extension that translates visible thinking into collapsible native sections in Tern and plain ANSI output in other terminals.
