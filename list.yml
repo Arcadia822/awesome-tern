@@ -205,6 +205,9 @@ sections:
       url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/jj.nix
       description: Creates, opens, removes, and inspects jj workspaces using Tern dialogs, tabs, and the status line, packaged with Nix inside a NixOS config.
       repo: plumj-am/nixos
+    - name: tern-tab-search
+      url: https://github.com/cgasgarth/tern-tab-search
+      description: Searches tabs across sessions in a native popup, with `session:tab` filtering and no changes to tab titles or pane layouts.
     - name: tern-close-plugin
       url: https://github.com/yumosx/tern-close-plugin
       description: Adds palette commands that close the other tabs and the split blocks left, right and around the focused block, each row hidden while it would close nothing.
