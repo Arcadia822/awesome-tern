@@ -29,9 +29,10 @@ jobs:
         run: |
           uv run -q tools/awesome_tern.py refresh
           uv run -q tools/awesome_tern.py build
-          git diff --quiet && exit 0
+          git add README.md metadata.json assets
+          git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "Update README.md and metadata"
+          git commit -m "Update README.md and metadata"
           git pull --rebase -q
           git push

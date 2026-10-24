@@ -33,10 +33,21 @@ ROOT = Path(__file__).resolve().parent.parent
 LIST = ROOT / "list.yml"
 METADATA = ROOT / "metadata.json"
 README = ROOT / "README.md"
+KIND_DIR = ROOT / "assets" / "kinds"
 
 GITHUB_REPO_URL = re.compile(r"^https://github\.com/([\w.-]+)/([\w.-]+)/?$")
 INACTIVE_AFTER = dt.timedelta(days=180)
 SORTS = {"stars", "manual"}
+# kind: (legend text, light-theme colour, dark-theme colour). Each kind renders as a pill image.
+KINDS = {
+    "plugin": ("Luau plugin", "#0969da", "#4493f8"),
+    "app": ("app drawn natively over TSP", "#8250df", "#ab7df8"),
+    "extension": ("runs inside your coding agent", "#1a7f37", "#3fb950"),
+    "companion": ("runs outside Tern", "#bc4c00", "#db6d28"),
+    "library": ("SDK or protocol library", "#bf3989", "#db61a2"),
+    "config": ("Nix package or dotfiles", "#9a6700", "#d29922"),
+    "docs": ("documentation", "#59636e", "#9198a1"),
+}
 
 
 # --------------------------------------------------------------------------- data
@@ -82,20 +93,26 @@ def validate(data: dict) -> list[str]:
         if not data.get(key):
             errors.append(f"list.yml: missing {key}")
     seen: dict[str, str] = {}
+    anchors = {"contents", "contributing"}
     for s, _ in walk(data.get("sections", [])):
         title = s.get("title") or "?"
         if not s.get("title"):
             errors.append("a section is missing its title")
+        elif anchor(title) in anchors:
+            errors.append(f"{title}: another heading already uses this title")
+        anchors.add(anchor(title))
         if s.get("sort", "stars") not in SORTS:
             errors.append(f"{title}: sort must be one of {sorted(SORTS)}")
         for e in s.get("entries", []):
             where = f"{title} > {e.get('name') or e.get('url') or '?'}"
-            for field in ("name", "url", "description"):
+            for field in ("name", "url", "kind", "description"):
                 if not e.get(field):
                     errors.append(f"{where}: missing {field}")
-            unknown = set(e) - {"name", "url", "description", "repo"}
+            unknown = set(e) - {"name", "url", "kind", "description", "repo"}
             if unknown:
                 errors.append(f"{where}: unknown fields {sorted(unknown)}")
+            if e.get("kind") and e["kind"] not in KINDS:
+                errors.append(f"{where}: kind must be one of {list(KINDS)}")
             url = e.get("url", "")
             if url and not url.startswith("https://"):
                 errors.append(f"{where}: url must start with https://")
@@ -127,15 +144,29 @@ def anchor(title: str) -> str:
     return re.sub(r"[^\w\- ]", "", title.strip().lower()).replace(" ", "-")
 
 
-def entry_meta(entry: dict, meta: dict) -> str:
-    """Stars, last push and status from the last refresh, for GitHub-backed entries."""
+def age(pushed: str, today: dt.date) -> str:
+    """Time since the last push, in units coarse enough that it rarely changes overnight."""
+    days = (today - dt.date.fromisoformat(pushed)).days
+    if days < 1:
+        return "today"
+    if days < 14:
+        return f"{days}d ago"
+    if days < 60:
+        return f"{days // 7}w ago"
+    if days < 365:
+        return f"{days // 30}mo ago"
+    return f"{days // 365}y ago"
+
+
+def entry_meta(entry: dict, meta: dict, today: dt.date) -> str:
+    """Stars, time since the last push and status from the last refresh, for GitHub-backed entries."""
     repo = entry_repo(entry)
     info = meta.get(repo) if repo else None
     if not info:
         return ""
     if info.get("status") == "unavailable":
         return " `unavailable`"
-    parts = [f"★ {info['stars']}", info["pushed"]]
+    parts = [f"★ {info['stars']:,}", age(info["pushed"], today)]
     if info.get("status"):
         parts.append(f"`{info['status']}`")
     return " " + " · ".join(parts)
@@ -153,7 +184,29 @@ def ordered(section: dict, meta: dict) -> list[dict]:
     return sorted(entries, key=lambda e: (-stars(e), e["name"].lower()))
 
 
-def render(data: dict, meta: dict) -> str:
+def pill(kind: str) -> str:
+    return f"![{kind}]({KIND_DIR.relative_to(ROOT).as_posix()}/{kind}.svg)"
+
+
+def pill_svg(kind: str, light: str, dark: str) -> str:
+    width = round(len(kind) * 6.6 + 14)
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="18" viewBox="0 0 {width} 18" role="img" aria-label="{kind}">\n'
+        f"<title>{kind}</title>\n"
+        f"<style>.b{{fill:{light};fill-opacity:.12;stroke:{light};stroke-opacity:.45}}"
+        f".t{{fill:{light};font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}"
+        f"@media (prefers-color-scheme:dark){{.b{{fill:{dark};stroke:{dark}}}.t{{fill:{dark}}}}}</style>\n"
+        f'<rect class="b" x=".5" y=".5" width="{width - 1}" height="17" rx="8.5"/>\n'
+        f'<text class="t" x="{width / 2:g}" y="12.5" text-anchor="middle">{kind}</text>\n'
+        "</svg>\n"
+    )
+
+
+def count(section: dict) -> int:
+    return len(section.get("entries", [])) + sum(count(s) for s in section.get("sections", []))
+
+
+def render(data: dict, meta: dict, today: dt.date) -> str:
     out = [
         "<!-- Generated from list.yml by tools/awesome_tern.py. Edit list.yml, not this file. -->",
         "",
@@ -164,17 +217,31 @@ def render(data: dict, meta: dict) -> str:
     ]
     if data.get("intro"):
         out += [data["intro"].strip(), ""]
-    out += ["## Contents", ""]
-    for s, depth in walk(data["sections"]):
-        out.append(f"{'  ' * depth}- [{s['title']}](#{anchor(s['title'])})")
+    out += [
+        " · ".join(f"{pill(k)} {label}" for k, (label, _, _) in KINDS.items()),
+        "",
+        "★ GitHub stars · time since the last push · `inactive` means no push in six months.",
+        "",
+        "## Contents",
+        "",
+    ]
+    for s in data["sections"]:
+        line = f"- **[{s['title']}](#{anchor(s['title'])})** {count(s)}"
+        subs = s.get("sections", [])
+        if subs:
+            line += " — " + " · ".join(f"[{c['title']}](#{anchor(c['title'])})" for c in subs)
+        out.append(line)
     out.append("")
     for s, depth in walk(data["sections"]):
         out += [f"{'#' * (depth + 2)} {s['title']}", ""]
         if s.get("blurb"):
-            out += [s["blurb"].strip(), ""]
+            blurb = s["blurb"].strip()
+            out += [blurb if "\n" in blurb else f"*{blurb}*", ""]
         items = ordered(s, meta)
         for e in items:
-            out.append(f"- [{e['name']}]({e['url']}){entry_meta(e, meta)} - {e['description'].strip()}")
+            out.append(
+                f"- [{e['name']}]({e['url']}) {pill(e['kind'])}{entry_meta(e, meta, today)} - {e['description'].strip()}"
+            )
         if items:
             out.append("")
     if data.get("contributing"):
@@ -189,7 +256,10 @@ def cmd_build(_args) -> int:
         for e in errors:
             print(f"error: {e}", file=sys.stderr)
         return 1
-    README.write_text(render(data, load_metadata()), encoding="utf-8")
+    KIND_DIR.mkdir(parents=True, exist_ok=True)
+    for kind, (_, light, dark) in KINDS.items():
+        (KIND_DIR / f"{kind}.svg").write_text(pill_svg(kind, light, dark), encoding="utf-8")
+    README.write_text(render(data, load_metadata(), dt.datetime.now(dt.UTC).date()), encoding="utf-8")
     print("wrote README.md")
     return 0
 
