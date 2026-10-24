@@ -408,6 +408,9 @@ sections:
   - name: rmon
     url: https://github.com/pgkt04/rmon
     description: Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
+  - name: tern-agents-ui
+    url: https://github.com/saanuregh/tern-agents-ui
+    description: Native chat frontends for Claude Code (`tclaude`) and Codex (`tcodex`) that draw the conversation, tool cards, subagents, plans, permission prompts and a composer with model, effort and context chips over TSP, and report agent status to Tern's attention inbox.
 - title: Agent integrations
   entries:
   - name: tern-omp-vimnav
