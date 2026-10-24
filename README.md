@@ -74,6 +74,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [tern-bigquery](https://github.com/junaidrahim/tern-bigquery) ★ 0 · 2026-10-15 - BigQuery browser built on the `bq` tool, with project search, dataset and table navigation, schema inspection and scrollable data previews.
 - [tern-claude-workflows](https://github.com/cgasgarth/tern-claude-workflows) ★ 0 · 2026-10-21 - Side block that follows the Claude Code workflows of the session in its tab, with phase timelines, an agent tree with model, tokens, tools and idle time, and a table of past workflows; it also works for ACP chats, which do not show workflow progress.
 - [tern-dbgview](https://github.com/Hime7864/tern-dbgview) ★ 0 · 2026-10-14 - Shows Windows debug output as it is produced, from kernel-mode `DbgPrint` and user-mode `OutputDebugString`.
+- [tern-jobs](https://github.com/eggpeat/tern-jobs) ★ 0 · 2026-10-23 - Lists your systemd user timers and failed user services in a block with each job's last result and next run, shows the journal of its last run, starts a job on a double `s` press and toasts when a job fails or recovers.
 
 ### Window and workflow
 
@@ -93,7 +94,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [herdr-tern-plugin](https://github.com/gabrielmoreira/herdr-tern-plugin) ★ 3 · 2026-10-05 - Adds an Open Herdr Session command that picks an existing herdr session and attaches to it inside Tern without copying or converting workspaces.
 - [pane-highlight](https://github.com/olegpulatov/pane-highlight) ★ 3 · 2026-10-23 - Marks the active split with a border and tint, dims the others, and recolors a pane by user or host, such as red for `prod-*` hosts.
 - [tern-chirp](https://github.com/Noctivoro/tern-chirp) ★ 3 · 2026-10-08 - Plays a short synthesized beep when an agent finishes or waits for you, with the sound's shape chosen by Jev to match how the turn went.
-- [tern-omp-usage](https://github.com/joaodutra88/tern-omp-usage) ★ 3 · 2026-10-23 - Shows Claude and Codex limits from omp in the status line as colored dots, with a Monday-to-Friday weekly budget, saved resets and today's tokens and API cost.
+- [tern-omp-usage](https://github.com/joaodutra88/tern-omp-usage) ★ 3 · 2026-10-23 - Shows Claude and Codex limits from omp in the status line as colored dots, with a work-week budget, alerts, a 7-day usage and cost dashboard and one-click updates.
 - [tern-usage-monitor](https://github.com/rico-vz/tern-usage-monitor) ★ 3 · 2026-10-06 - Floating or docked panel showing usage for every omp linked account, with per-account quota bars, auto-refresh, ordering and update-time settings.
 - [tern-worktree](https://github.com/nibblebot/tern-worktree) ★ 3 · 2026-10-09 - Lists, opens and creates git worktrees from the command palette using plain git, with `jq` and a POSIX shell as the only other requirements.
 - [tern-worktrees](https://github.com/riicodespretty/tern-worktrees) ★ 3 · 2026-10-13 - Opens git worktrees as Tern tabs with a branch picker and teardown on close, backed by a `tern-wt` CLI and an omp skill for agents.
