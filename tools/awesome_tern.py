@@ -17,6 +17,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -41,13 +42,22 @@ SORTS = {"stars", "manual"}
 # kind: (legend text, light-theme colour, dark-theme colour). Each kind renders as a pill image.
 KINDS = {
     "plugin": ("Luau plugin", "#0969da", "#4493f8"),
-    "app": ("app drawn natively over TSP", "#8250df", "#ab7df8"),
-    "extension": ("runs inside your coding agent", "#1a7f37", "#3fb950"),
-    "companion": ("runs outside Tern", "#bc4c00", "#db6d28"),
+    "app": ("App drawn natively over TSP", "#8250df", "#ab7df8"),
+    "extension": ("Runs inside your coding agent", "#1a7f37", "#3fb950"),
+    "companion": ("Runs outside Tern", "#bc4c00", "#db6d28"),
     "library": ("SDK or protocol library", "#bf3989", "#db61a2"),
     "config": ("Nix package or dotfiles", "#9a6700", "#d29922"),
-    "docs": ("documentation", "#59636e", "#9198a1"),
+    "docs": ("Documentation", "#59636e", "#9198a1"),
 }
+# Repository links, optionally into a folder whose README describes the entry.
+GITHUB_TREE_URL = re.compile(r"^https://github\.com/([\w.-]+)/([\w.-]+)(?:/tree/[^/]+/(.+?))?/?$")
+README_IMAGE = re.compile(r"!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]*\bsrc=[\"']([^\"']+)", re.I)
+NOT_SCREENSHOT = re.compile(
+    r"shields\.io|badge|badgen|codecov|deepwiki|/actions/workflows/|star-history|contrib\.rocks|buymeacoffee|ko-fi"
+    r"|(?<![a-z])(?:logo|icon|banner|hero)(?![a-z])",
+    re.I,
+)
+SCREENSHOT_TYPES = (".png", ".jpg", ".jpeg", ".gif", ".webp")
 
 
 # --------------------------------------------------------------------------- data
@@ -108,11 +118,14 @@ def validate(data: dict) -> list[str]:
             for field in ("name", "url", "kind", "description"):
                 if not e.get(field):
                     errors.append(f"{where}: missing {field}")
-            unknown = set(e) - {"name", "url", "kind", "description", "repo"}
+            unknown = set(e) - {"name", "url", "kind", "description", "repo", "screenshot"}
             if unknown:
                 errors.append(f"{where}: unknown fields {sorted(unknown)}")
             if e.get("kind") and e["kind"] not in KINDS:
                 errors.append(f"{where}: kind must be one of {list(KINDS)}")
+            shot = e.get("screenshot")
+            if shot is not None and shot != "none" and not str(shot).startswith("https://"):
+                errors.append(f"{where}: screenshot must be an https:// URL or none")
             url = e.get("url", "")
             if url and not url.startswith("https://"):
                 errors.append(f"{where}: url must start with https://")
@@ -150,26 +163,51 @@ def age(pushed: str, today: dt.date) -> str:
     if days < 1:
         return "today"
     if days < 14:
-        return f"{days}d ago"
+        return f"{days}d"
     if days < 60:
-        return f"{days // 7}w ago"
+        return f"{days // 7}w"
     if days < 365:
-        return f"{days // 30}mo ago"
-    return f"{days // 365}y ago"
+        return f"{days // 30}mo"
+    return f"{days // 365}y"
 
 
-def entry_meta(entry: dict, meta: dict, today: dt.date) -> str:
-    """Stars, time since the last push and status from the last refresh, for GitHub-backed entries."""
+def compact(stars: int) -> str:
+    return f"{stars / 1000:.1f}k" if stars >= 1000 else str(stars)
+
+
+def chips(entry: dict, meta: dict, today: dt.date) -> list[str]:
+    """Stars, time since the last push and status from the last refresh, for GitHub-backed entries.
+
+    Each chip is one code span with non-breaking spaces, so a narrow column stacks whole chips
+    instead of splitting one.
+    """
     repo = entry_repo(entry)
     info = meta.get(repo) if repo else None
     if not info:
-        return ""
+        return []
     if info.get("status") == "unavailable":
-        return " `unavailable`"
-    parts = [f"★ {info['stars']:,}", age(info["pushed"], today)]
+        return ["`unavailable`"]
+    out = [f"`★\u00a0{compact(info['stars'])}`", f"`{age(info['pushed'], today)}`"]
     if info.get("status"):
-        parts.append(f"`{info['status']}`")
-    return " " + " · ".join(parts)
+        out.append(f"`{info['status']}`")
+    return out
+
+
+def entry_readme(entry: dict) -> tuple[str, str] | None:
+    """(owner/name, folder) of the README that describes an entry, if it links to a repository or folder."""
+    m = GITHUB_TREE_URL.match(entry["url"])
+    if not m:
+        return None
+    return entry.get("repo") or f"{m[1]}/{m[2]}", m[3] or ""
+
+
+def screenshot(entry: dict, meta: dict) -> str | None:
+    if entry.get("screenshot"):
+        return None if entry["screenshot"] == "none" else entry["screenshot"]
+    where = entry_readme(entry)
+    if not where:
+        return None
+    return (meta.get(where[0]) or {}).get("screenshots", {}).get(where[1])
 
 
 def ordered(section: dict, meta: dict) -> list[dict]:
@@ -185,25 +223,41 @@ def ordered(section: dict, meta: dict) -> list[dict]:
 
 
 def pill(kind: str) -> str:
-    return f"![{kind}]({KIND_DIR.relative_to(ROOT).as_posix()}/{kind}.svg)"
+    src = f"{KIND_DIR.relative_to(ROOT).as_posix()}/{kind}.svg"
+    return f'<a href="#kinds"><img src="{src}" alt="{kind}" align="absmiddle"></a>'
 
 
 def pill_svg(kind: str, light: str, dark: str) -> str:
-    width = round(len(kind) * 6.6 + 14)
+    """A pill styled like a GitHub issue label, recoloured for dark themes."""
+    width = round(len(kind) * 6.7 + 16)
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="18" viewBox="0 0 {width} 18" role="img" aria-label="{kind}">\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="20" viewBox="0 0 {width} 20" role="img" aria-label="{kind}">\n'
         f"<title>{kind}</title>\n"
-        f"<style>.b{{fill:{light};fill-opacity:.12;stroke:{light};stroke-opacity:.45}}"
-        f".t{{fill:{light};font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}"
+        f"<style>.b{{fill:{light};fill-opacity:.12;stroke:{light};stroke-opacity:.4}}"
+        f'.t{{fill:{light};font:500 12px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}}'
         f"@media (prefers-color-scheme:dark){{.b{{fill:{dark};stroke:{dark}}}.t{{fill:{dark}}}}}</style>\n"
-        f'<rect class="b" x=".5" y=".5" width="{width - 1}" height="17" rx="8.5"/>\n'
-        f'<text class="t" x="{width / 2:g}" y="12.5" text-anchor="middle">{kind}</text>\n'
+        f'<rect class="b" x=".5" y=".5" width="{width - 1}" height="19" rx="9.5"/>\n'
+        f'<text class="t" x="{width / 2:g}" y="14" text-anchor="middle">{kind}</text>\n'
         "</svg>\n"
     )
 
 
 def count(section: dict) -> int:
     return len(section.get("entries", [])) + sum(count(s) for s in section.get("sections", []))
+
+
+def cell(text: str) -> str:
+    return text.strip().replace("|", "\\|")
+
+
+def entry_row(e: dict, meta: dict, today: dt.date) -> str:
+    left = f"**[{cell(e['name'])}]({e['url']})**<br>{pill(e['kind'])}"
+    if c := chips(e, meta, today):
+        left += "<br>" + " ".join(c)
+    right = cell(e["description"])
+    if shot := screenshot(e, meta):
+        right += f'<details><summary>Screenshot</summary><img src="{shot}" width="520" alt="{cell(e["name"])} screenshot"></details>'
+    return f"| {left} | {right} |"
 
 
 def render(data: dict, meta: dict, today: dt.date) -> str:
@@ -218,9 +272,16 @@ def render(data: dict, meta: dict, today: dt.date) -> str:
     if data.get("intro"):
         out += [data["intro"].strip(), ""]
     out += [
-        " · ".join(f"{pill(k)} {label}" for k, (label, _, _) in KINDS.items()),
+        '<a id="kinds"></a>',
+        "<details><summary>What the labels mean</summary>",
         "",
-        "★ GitHub stars · time since the last push · `inactive` means no push in six months.",
+        "| Label | Meaning |",
+        "|---|---|",
+        *(f"| {pill(k)} | {label} |" for k, (label, _, _) in KINDS.items()),
+        "| `★\u00a036.4k` `3d` | GitHub stars and time since the last push |",
+        "| `inactive` `archived` `unavailable` | No push in six months, archived, or the repository is gone |",
+        "",
+        "</details>",
         "",
         "## Contents",
         "",
@@ -238,12 +299,8 @@ def render(data: dict, meta: dict, today: dt.date) -> str:
             blurb = s["blurb"].strip()
             out += [blurb if "\n" in blurb else f"*{blurb}*", ""]
         items = ordered(s, meta)
-        for e in items:
-            out.append(
-                f"- [{e['name']}]({e['url']}) {pill(e['kind'])}{entry_meta(e, meta, today)} - {e['description'].strip()}"
-            )
         if items:
-            out.append("")
+            out += ["| Project | About |", "|---|---|", *(entry_row(e, meta, today) for e in items), ""]
     if data.get("contributing"):
         out += ["## Contributing", "", data["contributing"].strip(), ""]
     return "\n".join(out)
@@ -295,9 +352,31 @@ def github(path: str, token: str | None, accept: str = "application/vnd.github+j
     return body.decode("utf-8", "replace") if accept.endswith(".raw") else json.loads(body)
 
 
+def first_screenshot(readme: str, repo: str, branch: str, folder: str) -> str | None:
+    """The first image in a README that looks like a screenshot rather than a badge or logo."""
+    for m in README_IMAGE.finditer(readme):
+        url = (m[1] or m[2]).strip()
+        if NOT_SCREENSHOT.search(url) or not urllib.parse.urlparse(url).path.lower().endswith(SCREENSHOT_TYPES):
+            continue
+        if url.startswith("https://"):
+            return url
+        if "://" in url:
+            continue
+        path = posixpath.normpath(url.lstrip("/") if url.startswith("/") else posixpath.join(folder, url))
+        return f"https://github.com/{repo}/raw/{branch}/{path}"
+    return None
+
+
 def cmd_refresh(_args) -> int:
     token = github_token()
-    repos = sorted({r for e in all_entries(load_list()) if (r := entry_repo(e))})
+    data = load_list()
+    previous = load_metadata()
+    repos = sorted({r for e in all_entries(data) if (r := entry_repo(e))})
+    # README folders to look for screenshots in, per repository; entries with their own `screenshot` are skipped.
+    folders: dict[str, set[str]] = {}
+    for e in all_entries(data):
+        if not e.get("screenshot") and (where := entry_readme(e)):
+            folders.setdefault(where[0], set()).add(where[1])
     now = dt.datetime.now(dt.UTC)
     meta: dict = {}
     for repo in repos:
@@ -312,8 +391,24 @@ def cmd_refresh(_args) -> int:
         pushed = dt.datetime.fromisoformat(info["pushed_at"])
         status = "archived" if info["archived"] else "inactive" if now - pushed > INACTIVE_AFTER else None
         meta[repo] = {"stars": info["stargazers_count"], "pushed": info["pushed_at"][:10], "status": status}
+        shots = {}
+        for folder in sorted(folders.get(repo, ())):
+            path = f"/repos/{repo}/readme" + (f"/{urllib.parse.quote(folder)}" if folder else "")
+            try:
+                readme = github(path, token, accept="application/vnd.github.raw")
+            except urllib.error.HTTPError as err:
+                if err.code != 404:
+                    # Keep the last known screenshot rather than dropping it over a hiccup.
+                    if old := (previous.get(repo) or {}).get("screenshots", {}).get(folder):
+                        shots[folder] = old
+                    print(f"{repo}/{folder}: README fetch failed ({err.code})", file=sys.stderr)
+                continue
+            if url := first_screenshot(readme, repo, info["default_branch"], folder):
+                shots[folder] = url
+        if shots:
+            meta[repo]["screenshots"] = shots
     METADATA.write_text(json.dumps(meta, indent=2, sort_keys=True) + "\n")
-    print(f"refreshed {len(repos)} repositories")
+    print(f"refreshed {len(repos)} repositories, {sum(len(m.get('screenshots', {})) for m in meta.values())} screenshots")
     return 0
 
 

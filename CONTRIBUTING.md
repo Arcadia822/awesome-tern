@@ -28,6 +28,7 @@ Add the entry under the section where it fits:
 - `description` is one plain sentence that starts with a capital letter and ends with a period. Don't repeat the name.
 - Most sections are sorted by GitHub stars, so the position you pick doesn't matter there. Sections marked `sort: manual` keep the order in the file.
 - If the link points into a repository (a file in someone's dotfiles, say), add `repo: owner/name` so the entry gets stars and status.
+- Entries get a "Screenshot" dropdown automatically when the project's README has a screenshot (the first PNG, JPG, GIF or WebP that isn't a badge, logo or banner). To pick a different image, add `screenshot: https://…`; to turn it off, add `screenshot: none`.
 - Social posts and videos go stale quickly, so they don't belong here.
 
 ### Choosing a section

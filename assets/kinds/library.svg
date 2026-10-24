@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="18" viewBox="0 0 60 18" role="img" aria-label="library">
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="20" viewBox="0 0 63 20" role="img" aria-label="library">
 <title>library</title>
-<style>.b{fill:#bf3989;fill-opacity:.12;stroke:#bf3989;stroke-opacity:.45}.t{fill:#bf3989;font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media (prefers-color-scheme:dark){.b{fill:#db61a2;stroke:#db61a2}.t{fill:#db61a2}}</style>
-<rect class="b" x=".5" y=".5" width="59" height="17" rx="8.5"/>
-<text class="t" x="30" y="12.5" text-anchor="middle">library</text>
+<style>.b{fill:#bf3989;fill-opacity:.12;stroke:#bf3989;stroke-opacity:.4}.t{fill:#bf3989;font:500 12px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}@media (prefers-color-scheme:dark){.b{fill:#db61a2;stroke:#db61a2}.t{fill:#db61a2}}</style>
+<rect class="b" x=".5" y=".5" width="62" height="19" rx="9.5"/>
+<text class="t" x="31.5" y="14" text-anchor="middle">library</text>
 </svg>

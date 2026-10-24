@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34" height="18" viewBox="0 0 34 18" role="img" aria-label="app">
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="20" viewBox="0 0 36 20" role="img" aria-label="app">
 <title>app</title>
-<style>.b{fill:#8250df;fill-opacity:.12;stroke:#8250df;stroke-opacity:.45}.t{fill:#8250df;font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media (prefers-color-scheme:dark){.b{fill:#ab7df8;stroke:#ab7df8}.t{fill:#ab7df8}}</style>
-<rect class="b" x=".5" y=".5" width="33" height="17" rx="8.5"/>
-<text class="t" x="17" y="12.5" text-anchor="middle">app</text>
+<style>.b{fill:#8250df;fill-opacity:.12;stroke:#8250df;stroke-opacity:.4}.t{fill:#8250df;font:500 12px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}@media (prefers-color-scheme:dark){.b{fill:#ab7df8;stroke:#ab7df8}.t{fill:#ab7df8}}</style>
+<rect class="b" x=".5" y=".5" width="35" height="19" rx="9.5"/>
+<text class="t" x="18" y="14" text-anchor="middle">app</text>
 </svg>
