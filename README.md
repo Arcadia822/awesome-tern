@@ -112,7 +112,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [tern-vscode-dark](https://github.com/ITSyndicate25/tern-vscode-dark) ★ 2 · 2026-10-15 - Paints Tern with VS Code's Dark Modern theme, covering window chrome, terminal colors and the file editor's syntax colors.
 - [Toons](https://github.com/TazeDiB/Toons-Tern) ★ 2 · 2026-10-08 - Draws cartoons of what the agent is doing while commands run, as a port of claude-toons to Tern's native UI.
 - [font-default](https://github.com/getpipher/font-default) ★ 1 · 2026-10-06 - Makes the Reset font size command return to your configured size instead of Tern's built-in default.
-- [tern-bell](https://github.com/qiaoqinyu/tern-bell) ★ 1 · 2026-10-22 - Rings a bell when an agent turn finishes, with a keyboard-driven settings pane that previews fourteen macOS system sounds and user-supplied custom sounds before saving.
+- [tern-bell](https://github.com/qiaoqinyu/tern-bell) ★ 1 · 2026-10-22 - Plays configurable sounds when a main agent completes, fails or needs input, with separate completion and failure selections, previewable macOS and custom sounds, and settings saved only on confirmation.
 - [tern-file-paste](https://github.com/vokativ/tern-file-paste) ★ 1 · 2026-10-21 - Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
 - [tern-model-usage](https://github.com/azmifarih/tern-model-usage) ★ 1 · 2026-10-04 - Shows omp coding-plan quota for each signed-in account in the status line and opens a canvas pane with provider cards and reset countdowns.
 - [tern-obsidian](https://github.com/dbydd/tern-obsidian) ★ 1 · 2026-10-19 - Recognizes Obsidian vaults and opens their notes, Bases and JSON Canvas files in native reader blocks.
@@ -172,6 +172,7 @@ Applications that draw their own user interface natively inside Tern using the T
 - [saavy](https://github.com/saavy1/saavy_cloud) ★ 2 · 2026-10-05 - Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback elsewhere.
 - [tern-kata](https://github.com/Dangerboi/tern-kata) ★ 2 · 2026-10-19 - Browses and edits kata issues in a native pane opened with F9 or the palette, with Markdown issue bodies, priority and label chips, and kata links from agent chat that open the issue.
 - [Terngram](https://github.com/d3d0n/terngram) ★ 2 · 2026-10-05 - Unofficial keyboard-driven Telegram client built on TDLib and omp's UI toolkit, also installable as a Tern plugin.
+- [tern-agents-ui](https://github.com/saanuregh/tern-agents-ui) ★ 1 · 2026-10-21 - Native chat frontends for Claude Code (`tclaude`) and Codex (`tcodex`) that draw the conversation, tool cards, subagents, plans, permission prompts and a composer with model, effort and context chips over TSP, and report agent status to Tern's attention inbox.
 
 ## Agent integrations
 
