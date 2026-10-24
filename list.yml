@@ -19,6 +19,10 @@ sections:
   sections:
   - title: Coding agents
     entries:
+    - name: codex-tern
+      url: https://github.com/juniorxxue/codex-tern
+      kind: app
+      description: Unofficial Codex GUI that talks to the official `codex app-server` and draws its interface natively in Tern, keeping your existing Codex login and config.
     - name: oh-my-pi (omp)
       url: https://github.com/can1357/oh-my-pi
       kind: app
@@ -43,6 +47,14 @@ sections:
   - title: Agent extensions
     blurb: These run inside your coding agent rather than inside Tern.
     entries:
+    - name: hermes-tern
+      url: https://github.com/alt-glitch/hermes-tern
+      kind: extension
+      description: Hermes Agent plugin that adds `hermes tern`, drawing the transcript, tool cards, approvals, subagents and pull requests as native Tern UI.
+    - name: tern-omp-bridge
+      url: https://github.com/theblazehen/tern-omp-bridge
+      kind: extension
+      description: Gives omp agents a `tern_exec` tool that runs Luau in the live Tern window to inspect and control it and to show native tables, charts and buttons.
     - name: tern-omp-vimnav
       url: https://github.com/DinMon/tern-omp-vimnav
       kind: extension
@@ -73,6 +85,18 @@ sections:
       description: Shows each omp reply in Tern as its gist, with linked phrases that grow their detail in place when clicked, and tells the model which parts you opened.
   - title: Usage and quotas
     entries:
+    - name: tern-omp-usage-dashboard
+      url: https://github.com/wolfiesch/tern-omp-usage-dashboard
+      kind: plugin
+      description: Native pane of omp provider quotas for every account, with remaining bars, reset countdowns and explicit login, stale and no-data states.
+    - name: tern-plugins (Emirfs)
+      url: https://github.com/Emirfs/tern-plugins
+      kind: plugin
+      description: Collection with a pane of remaining limits for every account across omp profiles, a display of which omp profile each pane runs, and a split-columns layout helper.
+    - name: omp-cache-meter
+      url: https://github.com/andreiverdes/omp-cache-meter
+      kind: extension
+      description: Prompt-cache meter for omp with hits, writes and an expiry countdown, plus a Tern plugin that adds a status-line segment, tab countdowns and a toast before the cache goes cold.
     - name: tern-ai-limits
       url: https://github.com/pfTheTrial/tern-ai-limits
       kind: plugin
@@ -111,6 +135,19 @@ sections:
       description: Shows your MiniMax Token Plan quota in the status line and refreshes it every five minutes.
   - title: Status and dashboards
     entries:
+    - name: tern-agent-nav
+      url: https://github.com/Arcadia822/tern-agent-nav
+      kind: plugin
+      description: Compact side panel that lists omp, Codex, Copilot and Claude Code agents grouped by session and focuses one with a click.
+    - name: tern-omp-trajectory
+      url: https://github.com/Ahaxzh/tern-omp-trajectory
+      kind: plugin
+      description: Turns omp session logs into a native trajectory viewer with a turn-grouped call ledger, per-entry inspectors and a token timeline.
+    - name: Agents Hub
+      url: https://github.com/plxzy/agents-hub/tree/main/plugins/tern-agents-hub
+      kind: plugin
+      description: Side panel for a self-hosted Agents Hub that lists Pi agent runs with status, cost and pull request, lets you accept or reject pending reviews, and adds a status-line count.
+      repo: plxzy/agents-hub
     - name: omp Tiles
       url: https://github.com/MrsKugla/omp-tiles-plugin
       kind: plugin
@@ -137,6 +174,10 @@ sections:
       description: Marks tabs that run omp agents with WoW-style quest marks and todo progress bars.
   - title: Orchestration
     entries:
+    - name: tern-dsh-web
+      url: https://github.com/meisijiya/tern-dsh-web
+      kind: plugin
+      description: Starts the DeepSeek Harness web UI on demand from a status-bar menu and opens it in a browser block, with restart, stop and update actions.
     - name: tern-swarm
       url: https://github.com/bmanturner/tern-swarm
       kind: plugin
@@ -340,6 +381,10 @@ sections:
       description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
   - title: Themes and appearance
     entries:
+    - name: tern-wide-autocomplete
+      url: https://github.com/doyouing/tern-wide-autocomplete
+      kind: plugin
+      description: Widens omp's native autocomplete menus and lines them up with the composer in Tern's Reader layout.
     - name: omaterm
       url: https://github.com/betizzel/omaterm
       kind: plugin
@@ -489,6 +534,19 @@ sections:
       description: BigQuery browser built on the `bq` tool, with project search, dataset and table navigation, schema inspection and scrollable data previews.
   - title: System and developer tools
     entries:
+    - name: tern-clock
+      url: https://github.com/ajaxdude/tern-clock
+      kind: plugin
+      description: Live system clock in the tab bar, in 12- or 24-hour format with optional seconds and a choice of four positions.
+    - name: tern-commands
+      url: https://github.com/lucaxic/tern-commands
+      kind: plugin
+      description: Turns the code blocks in a `COMMANDS.md` file into grouped command buttons.
+    - name: tern-nom
+      url: https://github.com/tdortman/tern-plugins/tree/main/crates/nom
+      kind: app
+      description: Shows nix-output-monitor as a live native card with builds, downloads, flake updates and nh's closure diff, and runs the plain program outside Tern.
+      repo: tdortman/tern-plugins
     - name: tern-dbgview
       url: https://github.com/Hime7864/tern-dbgview
       kind: plugin
@@ -522,6 +580,14 @@ sections:
   sections:
   - title: Music and media
     entries:
+    - name: Warble
+      url: https://github.com/ElkinAMG/tern-warble
+      kind: plugin
+      description: Spotify player block that controls any Spotify Connect device through the Web API, with cover art, seeking, volume, shuffle, repeat, a device picker and search; macOS only for now.
+    - name: tern-spotify (taooceros)
+      url: https://github.com/taooceros/tern-spotify
+      kind: plugin
+      description: Spotify player backed by a librespot daemon that shows up as a Connect device, with your library, album pages and synced lyrics; needs Spotify Premium.
     - name: tern-spotify
       url: https://github.com/rico-vz/tern-spotify
       kind: plugin

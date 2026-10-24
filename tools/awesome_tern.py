@@ -103,7 +103,7 @@ def validate(data: dict) -> list[str]:
         if not data.get(key):
             errors.append(f"list.yml: missing {key}")
     seen: dict[str, str] = {}
-    anchors = {"contents", "contributing"}
+    anchors = {"contents", "legend", "contributing"}
     for s, _ in walk(data.get("sections", [])):
         title = s.get("title") or "?"
         if not s.get("title"):
@@ -224,7 +224,7 @@ def ordered(section: dict, meta: dict) -> list[dict]:
 
 def pill(kind: str) -> str:
     src = f"{KIND_DIR.relative_to(ROOT).as_posix()}/{kind}.svg"
-    return f'<a href="#kinds"><img src="{src}" alt="{kind}" align="absmiddle"></a>'
+    return f'<a href="#legend"><img src="{src}" alt="{kind}" align="absmiddle"></a>'
 
 
 def pill_svg(kind: str, light: str, dark: str) -> str:
@@ -272,16 +272,7 @@ def render(data: dict, meta: dict, today: dt.date) -> str:
     if data.get("intro"):
         out += [data["intro"].strip(), ""]
     out += [
-        '<a id="kinds"></a>',
-        "<details><summary>What the labels mean</summary>",
-        "",
-        "| Label | Meaning |",
-        "|---|---|",
-        *(f"| {pill(k)} | {label} |" for k, (label, _, _) in KINDS.items()),
-        "| `★\u00a036.4k` `3d` | GitHub stars and time since the last push |",
-        "| `inactive` `archived` `unavailable` | No push in six months, archived, or the repository is gone |",
-        "",
-        "</details>",
+        "Each entry shows what kind of project it is, its GitHub stars and how long ago it was last updated; the [legend](#legend) explains the labels.",
         "",
         "## Contents",
         "",
@@ -301,6 +292,16 @@ def render(data: dict, meta: dict, today: dt.date) -> str:
         items = ordered(s, meta)
         if items:
             out += ["| Project | About |", "|---|---|", *(entry_row(e, meta, today) for e in items), ""]
+    out += [
+        "## Legend",
+        "",
+        "| Label | Meaning |",
+        "|---|---|",
+        *(f"| {pill(k)} | {label} |" for k, (label, _, _) in KINDS.items()),
+        "| `★\u00a036.4k` `3d` | GitHub stars and time since the last push |",
+        "| `inactive` `archived` `unavailable` | No push in six months, archived, or the repository is gone |",
+        "",
+    ]
     if data.get("contributing"):
         out += ["## Contributing", "", data["contributing"].strip(), ""]
     return "\n".join(out)
