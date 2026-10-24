@@ -431,6 +431,9 @@ sections:
   - name: tern-awui
     url: https://github.com/materemias/tern-awui
     description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
+  - name: omp-stretch
+    url: https://github.com/materemias/omp-stretch
+    description: Shows each omp reply in Tern as its gist, with linked phrases that grow their detail in place when clicked, and tells the model which parts you opened.
   - name: grokbot-bridge
     url: https://github.com/cangiolo/grokbot-bridge
     description: Connects Grok Bot with interactive omp sessions in Tern through live composer status widgets, subtask stopwatch beacons, and prompt header session claims.
