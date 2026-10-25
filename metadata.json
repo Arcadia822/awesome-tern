@@ -31,7 +31,7 @@
     "status": null
   },
   "Dangerboi/tern-kata": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-24",
     "screenshots": {
       "": "https://github.com/Dangerboi/tern-kata/raw/main/docs/images/tern-kata.png"
     },
@@ -289,11 +289,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-24",
+    "pushed": "2026-10-25",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 36419,
+    "stars": 36508,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -378,7 +378,7 @@
     "status": null
   },
   "edheltzel/GitButler-for-Tern": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-24",
     "screenshots": {
       "": "https://github.com/edheltzel/GitButler-for-Tern/raw/main/docs/images/demo.gif"
     },
@@ -486,7 +486,7 @@
     "status": null
   },
   "juniorxxue/codex-tern": {
-    "pushed": "2026-10-23",
+    "pushed": "2026-10-24",
     "screenshots": {
       "": "https://github.com/juniorxxue/codex-tern/raw/main/docs/images/writing-edits.png"
     },
@@ -561,7 +561,7 @@
     "screenshots": {
       "": "https://github.com/materemias/omp-stretch/raw/master/docs/stretch.gif"
     },
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "materemias/tern-awui": {
@@ -651,7 +651,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-24",
+    "pushed": "2026-10-25",
     "stars": 11,
     "status": null
   },
@@ -744,7 +744,7 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-23",
+    "pushed": "2026-10-25",
     "stars": 9,
     "status": null
   },
@@ -783,7 +783,7 @@
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-24",
+    "pushed": "2026-10-25",
     "stars": 0,
     "status": null
   },
@@ -813,7 +813,7 @@
     "screenshots": {
       "": "https://github.com/thegeneralist01/tern-projects/raw/main/docs/screenshots/showcase-overview.png"
     },
-    "stars": 10,
+    "stars": 11,
     "status": null
   },
   "theoparis/nix-tern": {
