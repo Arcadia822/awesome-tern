@@ -100,7 +100,7 @@
     "status": null
   },
   "Luqueee/flock": {
-    "pushed": "2026-10-21",
+    "pushed": "2026-10-27",
     "screenshots": {
       "": "https://github.com/Luqueee/flock/raw/main/docs/screenshot.png"
     },
@@ -173,7 +173,7 @@
     "screenshots": {
       "": "https://github.com/SamuelFontess/tern-pencil-preview/raw/main/docs/board.png"
     },
-    "stars": 6,
+    "stars": 7,
     "status": null
   },
   "Sipty/tern-agent-progress": {
@@ -293,7 +293,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 36763,
+    "stars": 36791,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -514,6 +514,11 @@
   "kyle-elliott/tern-spotify": {
     "pushed": "2026-10-09",
     "stars": 1,
+    "status": null
+  },
+  "larkinwc/tern-pushover": {
+    "pushed": "2026-10-26",
+    "stars": 0,
     "status": null
   },
   "lfsmoura/tern-haptic-alert": {
@@ -750,7 +755,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-19",
-    "stars": 86,
+    "stars": 87,
     "status": null
   },
   "taooceros/tern-csv": {
