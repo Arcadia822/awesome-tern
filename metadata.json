@@ -6,7 +6,7 @@
   },
   "Ahaxzh/tern-omp-trajectory": {
     "pushed": "2026-10-21",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "Arcadia822/tern-agent-nav": {
@@ -31,7 +31,7 @@
     "status": null
   },
   "Dangerboi/tern-kata": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-10-26",
     "screenshots": {
       "": "https://github.com/Dangerboi/tern-kata/raw/main/docs/images/tern-kata.png"
     },
@@ -61,7 +61,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-07",
-    "stars": 6,
+    "stars": 7,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -130,7 +130,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-10-14",
+    "pushed": "2026-10-26",
     "stars": 1,
     "status": null
   },
@@ -289,11 +289,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-26",
+    "pushed": "2026-10-27",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 36643,
+    "stars": 36763,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -352,7 +352,7 @@
     "status": null
   },
   "dbydd/tern-obsidian": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-26",
     "stars": 1,
     "status": null
   },
@@ -565,7 +565,7 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-10-26",
     "screenshots": {
       "": "https://github.com/materemias/tern-awui/raw/main/docs/handover.gif"
     },
@@ -611,7 +611,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/panel.png"
     },
-    "stars": 13,
+    "stars": 14,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -651,7 +651,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-10-27",
     "stars": 11,
     "status": null
   },
@@ -668,7 +668,7 @@
     "screenshots": {
       "": "https://github.com/pgkt04/rmon/raw/main/media/demo.png"
     },
-    "stars": 9,
+    "stars": 10,
     "status": null
   },
   "plumj-am/nixos": {
@@ -740,17 +740,17 @@
     "screenshots": {
       "": "https://github.com/segmentationf4u1t/Tern-Me-On/raw/main/docs/devices.png"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-26",
+    "pushed": "2026-10-27",
     "stars": 9,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-19",
-    "stars": 84,
+    "stars": 86,
     "status": null
   },
   "taooceros/tern-csv": {
