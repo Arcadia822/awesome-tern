@@ -104,7 +104,7 @@
     "screenshots": {
       "": "https://github.com/Luqueee/flock/raw/main/docs/screenshot.png"
     },
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "MicroProofs/tern-difftastic": {
@@ -228,7 +228,7 @@
     "status": null
   },
   "andreiverdes/omp-cache-meter": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-28",
     "screenshots": {
       "": "https://raw.githubusercontent.com/andreiverdes/agent-cache-meter/main/docs/screenshots/omp-meter-warm.png"
     },
@@ -240,7 +240,7 @@
     "screenshots": {
       "": "https://github.com/arg3t/neotern/raw/main/docs/img/editor.png"
     },
-    "stars": 7,
+    "stars": 8,
     "status": null
   },
   "azmifarih/tern-model-usage": {
@@ -262,7 +262,7 @@
     "status": null
   },
   "bmanturner/tern-agent-scheduler": {
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-28",
     "screenshots": {
       "": "https://github.com/bmanturner/tern-agent-scheduler/raw/main/docs/screenshots/manager-light.png"
     },
@@ -292,7 +292,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 36903,
+    "stars": 36963,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -655,7 +655,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-28",
     "stars": 11,
     "status": null
   },
@@ -688,6 +688,14 @@
   "qiaoqinyu/tern-bell": {
     "pushed": "2026-10-22",
     "stars": 1,
+    "status": null
+  },
+  "rcnsh/tern-t3": {
+    "pushed": "2026-10-27",
+    "screenshots": {
+      "": "https://github.com/rcnsh/tern-t3/raw/main/docs/thread.png"
+    },
+    "stars": 0,
     "status": null
   },
   "resYuto/tern-jj": {
@@ -753,7 +761,7 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-19",
+    "pushed": "2026-10-28",
     "stars": 88,
     "status": null
   },
@@ -787,7 +795,7 @@
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-10-28",
     "stars": 0,
     "status": null
   },
